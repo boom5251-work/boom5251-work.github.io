@@ -1,0 +1,63 @@
+@import "../main"
+
+
+.header-footer-logo
+  font-family: 'Intro-Bold'
+  font-size: 22pt
+  user-select: none
+
+
+.header-items-line
+  background-color: $main-grey-color
+  height: 2px
+  max-width: 200px
+  width: 50%
+
+
+.link-icon-svg
+  fill: $main-grey-color
+  height: 28px
+  margin: 0 15px
+  width: 28px
+  transition: fill .5s
+
+.instagram-icon-svg:hover
+  fill: $instagram-color
+
+.github-icon-svg:hover
+  fill: $github-color
+
+.vk-icon-svg:hover
+  fill: $vk-color
+
+
+.header-text
+  display: block
+  font-family: 'Intro-Bold'
+  font-size: max(0.8em, min(3.3em, calc(100vw * 4 / 100)))
+  margin: 0
+
+  >span
+    display: inline-block
+    margin-bottom: 15px
+
+  .highlighted
+    color: $main-purple-color
+
+
+.header-text-small
+  font-size: max(0.55em, min(2.3em, calc(100vw * 4 / 150)))
+
+
+
+.footer-links-container
+  >a
+    color: black
+    font-family: 'Intro-Regular'
+    font-size: 12pt
+    margin: auto 0 auto 20px
+    text-decoration: none
+    transition: .5s
+
+  >a:hover
+    color: $main-grey-color
