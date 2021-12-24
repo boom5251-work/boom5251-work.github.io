@@ -1,14 +1,18 @@
 @import "../main"
 
 
-@mixin header-footer($margin)
+$width: 80%
+
+
+@mixin header-section-footer($margin: 0 auto)
   margin: $margin
   padding: 20px
-  width: 85%
+  width: $width
+  @content
 
 
 header
-  @include header-footer(70px auto 0 auto)
+  @include header-section-footer(70px auto 0 auto)
 
 
 .header-view-container
@@ -31,8 +35,75 @@ header
 
 
 
+.about-section
+  @include header-section-footer()
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+  >div
+    min-width: 150px
+    width: 45%
+
+
+
+.my-skills-section
+  @include header-section-footer()
+  padding-bottom: 0
+
+
+.my-skills-container
+  display: flex
+  flex-direction: column
+  margin: 100px 0 200px 0
+
+  >div
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+
+
+.my-skills-items-container
+  display: flex
+  flex-direction: row
+
+
+  >div
+    display: flex
+    flex-direction: column
+
+
+
+.my-projects-section
+  @include header-section-footer()
+  padding-top: 0
+
+
+.my-projects-container
+  display: flex
+  flex-direction: column
+  margin: 0 0 200px 0
+
+
+.my-projects-items-container
+  display: grid
+  grid-template-columns: 1fr 1fr
+  justify-content: space-between
+
+
+
+.background-bottom-block
+  background-color: $main-lightest-grey-color
+  padding-top: 150px
+
+
+.work-together-section
+  @include header-section-footer(0 auto 100px auto)
+
+
 footer
-  @include header-footer(0 auto)
+  @include header-section-footer()
   display: flex
   flex-direction: row
   justify-content: space-between

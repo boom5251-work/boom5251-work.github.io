@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Intro-Light";
+  src: url("/Resume/resources/fonts/Intro-Light.otf");
+}
+@font-face {
   font-family: "Intro-Regular";
   src: url("/Resume/resources/fonts/Intro-Regular.otf");
 }
@@ -47,6 +51,7 @@ html, body {
   display: block;
   font-family: "Intro-Bold";
   font-size: max(0.8em, min(3.3em, 4vw));
+  text-space: 1.3;
   margin: 0;
 }
 .header-text > span {
@@ -58,7 +63,75 @@ html, body {
 }
 
 .header-text-small {
-  font-size: max(0.55em, min(2.3em, 2.6666666667vw));
+  font-size: max(0.55em, min(2.2em, 4vw));
+}
+
+p {
+  color: #646464;
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.7;
+  margin: 0;
+}
+
+.subheader-text {
+  font-family: "Intro-Bold";
+  font-size: max(0.5em, min(2.2em, 4vw));
+  margin: 0;
+}
+
+.my-skills-text, .my-projects-text {
+  margin: 60px 0;
+  width: 60%;
+}
+
+.my-skills-item {
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+.my-skills-item > svg {
+  fill: #a333ff;
+  height: 18px;
+  margin: auto 0;
+  width: 18px;
+  transform: translateY(-1px);
+}
+.my-skills-item > span {
+  font-family: "Intro-Regular";
+  font-size: 16pt;
+  margin-left: 10px;
+}
+
+.my-projects-item {
+  margin: 0 0 60px 0;
+  width: 85%;
+}
+.my-projects-item > h3 {
+  font-family: "Intro-Bold";
+  font-size: max(0.5em, min(2.2em, 4vw));
+  margin: 30px 0 0 0;
+}
+.my-projects-item > p {
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  margin: 15px 0;
+}
+
+.work-together-text {
+  margin: 60px 0;
+  width: 40%;
+}
+
+.email-link {
+  color: black;
+  font-family: "Intro-Regular";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.email-link:hover {
+  color: #aaaaaa;
 }
 
 .footer-links-container > a {

@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Intro-Light";
+  src: url("/Resume/resources/fonts/Intro-Light.otf");
+}
+@font-face {
   font-family: "Intro-Regular";
   src: url("/Resume/resources/fonts/Intro-Regular.otf");
 }
@@ -13,7 +17,7 @@ html, body {
 header {
   margin: 70px auto 0 auto;
   padding: 20px;
-  width: 85%;
+  width: 80%;
 }
 
 .header-view-container {
@@ -35,10 +39,80 @@ header {
   margin: 50px 0 0 50px;
 }
 
+.about-section {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.about-section > div {
+  min-width: 150px;
+  width: 45%;
+}
+
+.my-skills-section {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  padding-bottom: 0;
+}
+
+.my-skills-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 200px 0;
+}
+.my-skills-container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.my-skills-items-container {
+  display: flex;
+  flex-direction: row;
+}
+.my-skills-items-container > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-projects-section {
+  margin: 0 auto;
+  padding: 20px;
+  width: 80%;
+  padding-top: 0;
+}
+
+.my-projects-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 200px 0;
+}
+
+.my-projects-items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.background-bottom-block {
+  background-color: #f8f8f8;
+  padding-top: 150px;
+}
+
+.work-together-section {
+  margin: 0 auto 100px auto;
+  padding: 20px;
+  width: 80%;
+}
+
 footer {
   margin: 0 auto;
   padding: 20px;
-  width: 85%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
