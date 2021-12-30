@@ -103,18 +103,32 @@ p {
 }
 
 .my-projects-item {
+  cursor: pointer;
   margin: 0 0 60px 0;
   width: 85%;
+}
+.my-projects-item > img {
+  border-radius: 8px;
+  width: 100%;
 }
 .my-projects-item > h3 {
   font-family: "Intro-Bold";
   font-size: max(0.5em, min(2.2em, 4vw));
+  transition: 0.5s;
   margin: 30px 0 0 0;
 }
 .my-projects-item > p {
   font-family: "Intro-Light";
   font-size: max(0.3em, min(1.1em, 4vw));
+  transition: 0.5s;
   margin: 15px 0;
+}
+
+.my-projects-item:hover > h3 {
+  color: #737373;
+}
+.my-projects-item:hover > p {
+  color: #979797;
 }
 
 .work-together-text {
@@ -144,6 +158,60 @@ p {
 }
 .footer-links-container > a:hover {
   color: #aaaaaa;
+}
+
+.project-description-text {
+  margin: 60px 0;
+}
+
+.project-info-container .header {
+  font-family: "Intro-Bold";
+  font-size: 14pt;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.project-info-container .text {
+  font-family: "Intro-Light";
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+.project-info-container .link {
+  color: #0f93ff;
+  font-family: "Intro-Regular";
+  font-size: 14pt;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.project-info-container .link:hover {
+  color: #8fccff;
+}
+
+.project-main-image {
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.project-goals-text {
+  margin: 60px 0 0 0;
+}
+
+.project-design-container img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.project-design-text {
+  margin: 60px 0 0 0;
+}
+.project-design-text .link {
+  color: #0f93ff;
+  font-family: "Intro-Regular";
+  text-decoration: none;
+  transition: 0.5s;
+}
+.project-design-text .link:hover {
+  color: #8fccff;
 }
 
 /*# sourceMappingURL=content.css.map */

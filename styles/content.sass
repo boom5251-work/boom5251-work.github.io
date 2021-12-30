@@ -90,19 +90,34 @@ p
 
 
 .my-projects-item
+  cursor: pointer
   margin: 0 0 60px 0
   width: 85%
+
+  >img
+    border-radius: 8px
+    width: 100%
 
   >h3
     font-family: 'Intro-Bold'
     font-size: max(0.5em, min(2.2em, calc(100vw * 4 / 100)))
+    transition: .5s
     margin: 30px 0 0 0
-
 
   >p
     font-family: 'Intro-Light'
     font-size: max(0.3em, min(1.1em, calc(100vw * 4 / 100)))
+    transition: .5s
     margin: 15px 0
+
+
+.my-projects-item:hover
+  >h3
+    color: lighten(black, 45%)
+
+  >p
+    color: lighten($main-dark-grey-color, 20%)
+
 
 
 
@@ -134,3 +149,66 @@ p
 
   >a:hover
     color: $main-grey-color
+
+
+
+$link-color: rgb(15, 147, 255)
+
+
+.project-description-text
+  margin: 60px 0
+
+
+.project-info-container
+  .header
+    font-family: 'Intro-Bold'
+    font-size: 14pt
+    margin-bottom: 20px
+    text-transform: uppercase
+
+  .text
+    font-family: 'Intro-Light'
+    font-size: 14pt
+    margin-bottom: 10px
+
+  .link
+    color: $link-color
+    font-family: 'Intro-Regular'
+    font-size: 14pt
+    text-decoration: none
+    transition: .5s
+
+  .link:hover
+    color: lighten($link-color, 25%)
+
+
+
+.project-main-image
+  border-radius: 5px
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1)
+  width: 100%
+
+
+
+.project-goals-text
+  margin: 60px 0 0 0
+
+
+
+.project-design-container
+  img
+    border-radius: 5px
+    width: 100%
+
+
+.project-design-text
+  margin: 60px 0 0 0
+
+  .link
+    color: $link-color
+    font-family: 'Intro-Regular'
+    text-decoration: none
+    transition: .5s
+
+  .link:hover
+    color: lighten($link-color, 25%)
