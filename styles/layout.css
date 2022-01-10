@@ -40,6 +40,13 @@ header {
   margin: 50px 0 0 50px;
 }
 
+.main-image-section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  width: 80%;
+}
+
 .about-section {
   margin: 0 auto;
   max-width: 1200px;
