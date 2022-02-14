@@ -17,6 +17,7 @@ html, body {
 header {
   margin: 70px auto 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
 }
@@ -43,6 +44,7 @@ header {
 .main-image-section {
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
 }
@@ -50,6 +52,7 @@ header {
 .about-section {
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
   display: flex;
@@ -64,6 +67,7 @@ header {
 .my-skills-section {
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
   padding-bottom: 0;
@@ -92,6 +96,7 @@ header {
 .my-projects-section {
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
   padding-top: 0;
@@ -104,8 +109,7 @@ header {
 }
 
 .my-projects-items-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -116,6 +120,7 @@ header {
 .work-together-section {
   margin: 0 auto 150px auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
 }
@@ -123,6 +128,7 @@ header {
 footer {
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
   display: flex;
@@ -168,28 +174,35 @@ footer {
   width: 30%;
 }
 
-.project-main-image-section {
+.project-main-images-section {
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-goals-section {
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
 }
 
 .project-goals-container {
-  margin: 100px 0 0 0;
+  margin: 100px 0;
   max-width: 800px;
 }
 
 .project-design-section {
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 500px;
   padding: 20px;
   width: 80%;
 }
@@ -197,11 +210,16 @@ footer {
 .project-design-container {
   display: flex;
   flex-direction: row;
-  margin: 100px 0;
+  margin: 0 0 100px 0;
   justify-content: space-between;
 }
 .project-design-container > div {
   width: 45%;
+}
+
+.phone-email-block {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=layout.css.map */

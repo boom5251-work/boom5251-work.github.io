@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <span class="header-footer-logo">VK&#62;</span>
+        <a href="/Resume/index.html"><img class="header-footer-logo" src="/Resume/resources/images/main-logo.png"></a>
         <div class="project-header-view-container">
             <h1 class="header-text">Прогноз погоды</h1>
             <p class="project-description-text">Прогноз погоды &mdash; это проект web-приложения, которое предоставляет пользователю данные о погоде в его регионе. Информация о погодных условиях (температуре, скорости ветра и т.д.) для конкретнго региона запрашиваеются в сервера weatherapi по координатам или названию населенного пункта.</p>
@@ -22,28 +22,31 @@
                     <span class="header">Стек</span>
                     <span class="text">ASP.NET MVC</span>
                     <span class="text">F# &amp; Razor</span>
-                    <span class="text">Sass</span>
+                    <span class="text">MSTest</span>
                 </div>
                 <div>
                     <span class="header">Код</span>
-                    <a class="link" href="https://github.com/boom5251-work/WeatherForecast"><span class="link">Github-репозиторий</span></a>
+                    <a class="link" href="https://github.com/boom5251-work/WeatherForecast/"><span class="link">Github-репозиторий</span></a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="project-main-image-section">
+    <section class="project-main-images-section">
         <img class="project-main-image" src="/Resume/resources/images/weather-forecast-ust-kachka.png">
+        <img class="project-main-image" src="/Resume/resources/images/weather-forecast-kaliningrad.png">
+        <img class="project-main-image" src="/Resume/resources/images/weather-forecast-pretoria.png">
+        <img class="project-main-image" src="/Resume/resources/images/weather-forecast-yakutsk.png">
     </section>
 
     <section class="project-goals-section">
         <div class="project-goals-container">
-            <h2 class="subheader-text">Цели и задачи</h2>
+            <h2 class="subheader-text">О проекте</h2>
             <p class="project-goals-text">
-                <span>Задача данного проекта &mdash; создание web-приложения с простым и приятным интерфейсом, которое будет отображать прогноз погоды для любой точки мира.</span>
+                <span>Задача — создание web-приложения с простым и приятным интерфейсом, которое будет отображать прогноз погоды для любой точки мира.</span>
                 <br>
                 <br>
-                <span>Цель &mdash; отработка паттерна MVC (модель-представление-контроллер), а также получение новых знаний по языку F# и технологии Razor.</span>
+                <span>Приложение создано с использованием фреймворка <b>ASP.NET MVC</b>. Модули и классы приложения реализуются на языке <b>F#</b>. Используется как объектно-ориентированный, так и функциональный подход. Для интеграции программного кода, написанного на языке <b>C#</b>, в шаблон HTML-страницы используется технология <b>Razor</b>.</span>
             </p>
         </div>
     </section>
@@ -51,11 +54,23 @@
     <section class="project-design-section">
         <div class="project-design-container">
             <div>
-                <img src="/Resume/resources/images/weather-forecast-icons.png">
+                <img class="project-design-image" src="/Resume/resources/images/weather-forecast-icons.png">
             </div>
             <div>
                 <h2 class="subheader-text">Дизайн</h2>
-                <p class="project-design-text">Дизайн приложения вдохновлен галлереей behance <a class="link" href="https://www.behance.net/gallery/65686219/simpe-weather-app"><span class="link">simple weather app</span></a> &mdash; мобильного приложения прогноза погоды &mdash; и создан на ее основе путем адаптации под экран персонального компьютера.</p>
+                <p class="project-design-text">Дизайн приложения вдохновлен галереей behance <a class="link" href="https://www.behance.net/gallery/65686219/simpe-weather-app"><span class="link">simple weather app</span></a> &mdash; мобильного приложения прогноза погоды &mdash; и создан на ее основе путем адаптации под экран персонального компьютера.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="project-design-section">
+        <div class="project-design-container">
+            <div>
+                <h2 class="subheader-text">Тестирование</h2>
+                <p class="project-design-text"><b>Проект модульного тестирования</b> приложения создан для проверки бизнес-логики приложения. Тесты созданы на базе фреймворка <b>MSTest</b>. Тестированию подлежат такие модули как WeatherApi, который получает данные о погоде. Модуль Modeler, создающий модели-представления, на основе полученных данных. А также зависимость ConditionIconService.</p>
+            </div>
+            <div>
+                <img src="/Resume/resources/images/weather-forecast-testing.png" class="project-design-image">
             </div>
         </div>
     </section>
@@ -64,13 +79,14 @@
         <footer>
             <div class="work-together-container">
                 <h2 class="subheader-text">Давайте развиваться вместе!</h2>
-                <p class="work-together-text">
-                    Если вы ищите разработчика в команду или у вас возникли какие-то вопросы, то пишите мне на почту. Буду рад работать с вами.
-                </p>
-                <a class="email-link" href="mailto: boom5251@vk.com">boom5251@vk.com</a>
+                <p class="work-together-text">Если вы ищите разработчика в команду или у вас возникли какие-то вопросы, то пишите мне на почту или звоните. Буду рад работать с вами.</p>
+                <div class="phone-email-block">
+                    <a class="phone-email-link" href="mailto: boom5251@vk.com">boom5251@vk.com</a>
+                    <a class="phone-email-link" href="tel: +74951234567">+7 (985) 44-36-525</a>
+                </div>
             </div>
             <div class="footer-items-container">
-                <span class="header-footer-logo">VK&#62;</span>
+                <a href="/Resume/index.html"><img class="header-footer-logo" src="/Resume/resources/images/main-logo.png"></a>
                 <div class="footer-links-container">
                     <a title="Моя страничка вк" href="https://vk.com/soln_msk">вконтакте</a>
                     <a title="Репозитории github" href="https://github.com/boom5251-work">github</a>

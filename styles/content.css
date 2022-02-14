@@ -15,9 +15,9 @@ html, body {
 }
 
 .header-footer-logo {
-  font-family: "Intro-Bold";
-  font-size: 22pt;
+  cursor: pointer;
   user-select: none;
+  width: 45px;
 }
 
 .header-items-line {
@@ -35,16 +35,8 @@ html, body {
   transition: fill 0.5s;
 }
 
-.instagram-icon-svg:hover {
-  fill: #da2c7e;
-}
-
-.github-icon-svg:hover {
-  fill: black;
-}
-
-.vk-icon-svg:hover {
-  fill: #005ec6;
+.link-icon-svg:hover {
+  fill: #a333ff;
 }
 
 .header-text {
@@ -62,8 +54,13 @@ html, body {
   color: #a333ff;
 }
 
+.main-image {
+  min-width: 400px;
+  width: 100%;
+}
+
 .header-text-small {
-  font-size: max(0.55em, min(2.2em, 4vw));
+  font-size: max(0.55em, min(2.1em, 4vw));
 }
 
 p {
@@ -105,10 +102,11 @@ p {
 .my-projects-item {
   cursor: pointer;
   margin: 0 0 60px 0;
-  width: 85%;
+  width: 46%;
 }
 .my-projects-item > img {
   border-radius: 8px;
+  transition: 0.3s;
   width: 100%;
 }
 .my-projects-item > h3 {
@@ -124,6 +122,9 @@ p {
   margin: 15px 0;
 }
 
+.my-projects-item:hover > img {
+  transform: translateY(-10px);
+}
 .my-projects-item:hover > h3 {
   color: #737373;
 }
@@ -136,15 +137,17 @@ p {
   width: 40%;
 }
 
-.email-link {
+.phone-email-link {
   color: black;
+  width: fit-content;
   font-family: "Intro-Regular";
   font-size: max(0.3em, min(1.1em, 4vw));
+  margin-bottom: 12px;
   text-decoration: none;
   transition: 0.5s;
 }
 
-.email-link:hover {
+.phone-email-link:hover {
   color: #aaaaaa;
 }
 
@@ -188,16 +191,18 @@ p {
 
 .project-main-image {
   border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2%;
+  width: 49%;
 }
 
 .project-goals-text {
   margin: 60px 0 0 0;
 }
 
-.project-design-container img {
+.project-design-image {
   border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   width: 100%;
 }
 

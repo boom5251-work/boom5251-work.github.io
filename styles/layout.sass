@@ -7,6 +7,7 @@ $width: 80%
 @mixin header-section-footer($margin: 0 auto)
   margin: $margin
   max-width: 1200px
+  min-width: 500px
   padding: 20px
   width: $width
   @content
@@ -93,8 +94,7 @@ header
 
 
 .my-projects-items-container
-  display: grid
-  grid-template-columns: 1fr 1fr
+  display: flex
   justify-content: space-between
 
 
@@ -154,8 +154,12 @@ footer
 
 
 
-.project-main-image-section
+.project-main-images-section
   @include header-section-footer()
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
 
 
 
@@ -164,7 +168,7 @@ footer
 
 
 .project-goals-container
-  margin: 100px 0 0 0
+  margin: 100px 0
   max-width: 800px
 
 
@@ -176,8 +180,14 @@ footer
 .project-design-container
   display: flex
   flex-direction: row
-  margin: 100px 0
+  margin: 0 0 100px 0
   justify-content: space-between
 
   >div
     width: 45%
+
+
+
+.phone-email-block
+  display: flex
+  flex-direction: column
