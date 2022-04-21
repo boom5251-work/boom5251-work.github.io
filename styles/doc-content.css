@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Intro-Light";
+  src: url("/Resume/resources/fonts/Intro-Light.otf");
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url("/Resume/resources/fonts/Intro-Regular.otf");
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url("/Resume/resources/fonts/Intro-Bold.otf");
+}
+@font-face {
+  font-family: "Cascadia-Mono-Regular";
+  src: url("/Resume/resources/fonts/Cascadia-Mono.ttf");
+}
+html, body {
+  margin: 0;
+}
+
+p {
+  color: #646464;
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.7;
+  margin: 0;
+}
+
+.header-text {
+  display: block;
+  font-family: "Intro-Bold";
+  font-size: max(0.8em, min(3.3em, 4vw));
+  text-space: 1.3;
+  margin: 0;
+  font-size: max(0.4em, min(2.5em, 4vw));
+}
+
+.subheader-text {
+  font-family: "Intro-Bold";
+  font-size: max(0.5em, min(2.2em, 4vw));
+  margin: 0;
+  font-size: max(0.3em, min(2em, 4vw));
+  margin: 80px 0 20px 0;
+}
+
+.element-name {
+  font-family: "Intro-Bold";
+  font-size: max(0.5em, min(2.2em, 4vw));
+  margin: 0;
+  font-size: max(0.2em, min(1.4em, 4vw));
+  margin: 40px 0 0 0;
+}
+
+.element-description {
+  color: #646464;
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.7;
+  margin: 0;
+  margin: 20px 0;
+}
+
+.dev-doc-table {
+  background-color: #d2d2d2;
+  border-spacing: 0;
+  margin-bottom: 60px;
+  padding: 1px 1px 0 1px;
+}
+.dev-doc-table td {
+  color: #646464;
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.7;
+  margin: 0;
+  background-color: white;
+  border-bottom: 1px solid #d2d2d2;
+  padding: 12px;
+  vertical-align: top;
+}
+.dev-doc-table td:first-child {
+  width: 30%;
+}
+.dev-doc-table td:last-child {
+  width: 70%;
+}
+.dev-doc-table .link {
+  color: #0f93ff;
+  cursor: pointer;
+  display: block;
+  font-family: "Intro-Regular";
+  font-size: 1em;
+  text-decoration: none;
+  transition: 0.5s;
+  top: 0;
+}
+.dev-doc-table .link:hover {
+  color: #8fccff;
+}
+
+.dev-doc-info-container > .description {
+  margin: 40px 0;
+}
+
+pre {
+  margin: 0;
+  padding: 16px;
+  white-space: pre-wrap;
+}
+
+.code-block {
+  background-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+
+.code-header {
+  font-family: "Intro-Light";
+  font-size: 1em;
+  padding: 8px 16px;
+}
+
+.code-content {
+  background-color: #f2f2f2;
+}
+
+.lang-fsharp {
+  color: black;
+  font-family: "Cascadia-Mono-Regular";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.5;
+}
+.lang-fsharp .keyword {
+  color: blue;
+}
+.lang-fsharp .type {
+  color: #2b91af;
+}
+.lang-fsharp .string {
+  color: #a31515;
+}
+.lang-fsharp .function {
+  color: #74531f;
+}
+.lang-fsharp .field {
+  color: #1f377f;
+}
+.lang-fsharp .mutable {
+  color: #ffd21c;
+}
+
+/*# sourceMappingURL=doc-content.css.map */

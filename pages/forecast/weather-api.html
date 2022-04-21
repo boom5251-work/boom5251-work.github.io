@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherApi Модуль (WeatherForecast)</title>
+    <link rel="stylesheet" href="/Resume/styles/layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-content.css">
+</head>
+<body>
+    <section class="dev-doc-info-section">
+        <div class="dev-doc-info-container">
+            <h1 class="header-text">WeatherApi Модуль</h1>
+            <h2 class="subheader-text">Определение</h2>
+            <p>Пространство имен: <b>WeatherForecast.Data</b></p>
+            <p>Сборка: <b>WeatherForecast.exe</b></p>
+            <p class="description">Модуль отвечает за отправку запросов на сервер метеоданных WeatherApi и получение ответов в формате JSON.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">module public</span> <span class="type">WeatherApi</span> =</code></pre>
+                </div>
+            </div>
+
+            <h2 class="subheader-text">Поля</h2>
+            <h3 class="element-name">apiKey</h3>
+            <p class="element-description">Ключ Api сервера метеоданных.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let private</span> apiKey: <span class="type">string</span> = <span class="string">"d4b9d636ed454ab68e4121950212512"</span></code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">webSite</h3>
+            <p class="element-description">Домен сервера метеоданных.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let private</span> webSite: <span class="type">string</span> = <span class="string">"https://api.weatherapi.com"</span></code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">currentUrl</h3>
+            <p class="element-description">URL-адрес для получения текущей погоды.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let private</span> currentUrl: <span class="type">string</span> = <span class="string">$"{</span>webSite<span class="string">}/v1/current.json?key={</span>apiKey<span class="string">}"</span> </code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">forecastUrl</h3>
+            <p class="element-description">URL-адрес для получения прогноза погоды.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let private</span> forecastUrl: <span class="type">string</span> = <span class="string">$"{</span>webSite<span class="string">}/v1/forecast.json?key={</span>apiKey<span class="string">}"</span> </code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">astronomyUrl</h3>
+            <p class="element-description">URL-адрес для получения астрономических данных.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let private</span> astronomyUrl: <span class="type">string</span> = <span class="string">$"{</span>webSite<span class="string">}/v1/astronomy.json?key={</span>apiKey<span class="string">}"</span> </code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">applicationJson</h3>
+            <p class="element-description">Формат ответа JSON.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let private</span> applicationJson: <span class="type">string</span> = <span class="string">"application/json"</span></code></pre>
+                </div>
+            </div>
+
+            <h2 class="subheader-text">Функции</h2>
+            <h3 class="element-name">coordsToString</h3>
+            <p class="element-description">Приводит координаты к необходимому формату.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let private</span> <span class="function">coordsToString</span> (<span class="field">lat</span>: <span class="type">float</span>) (<span class="field">lon</span>: <span class="type">float</span>): <span class="type">string</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">parseJson</h3>
+            <p class="element-description">Обрабатывает полученный JSON-документ.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let private</span> <span class="function">parseJson</span>(<span class="field">response</span>: <span class="type">HttpResponseMessage</span>): <span class="type">JsonDocument</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">sendHttpGetRequest</h3>
+            <p class="element-description">Отправляет GET-запрос на сервер метеоданных.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">sendHttpRequest</span>(<span class="field">url</span>: <span class="type">string</span>): <span class="type">JsonDocument</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">getCurrentByCoords</h3>
+            <p class="element-description">Получает текущую погоды по координатам.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">getCurrentByCoords</span> (<span class="field">lat</span>: <span class="type">float</span>) (<span class="field">lon</span>: <span class="type">float</span>): <span class="type">CurrentWeatherViewModel</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">getCurrentByCity</h3>
+            <p class="element-description">Получает текущую погоды по названию города.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">getCurrentByCity</span>(<span class="field">city</span>: <span class="type">string</span>): <span class="type">CurrentWeatherViewModel</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">getForecastByCoords</h3>
+            <p class="element-description">Получает прогноз по координатам.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">getForecastByCoords</span> (<span class="field">lat</span>: <span class="type">float</span>) (<span class="field">lon</span>: <span class="type">float</span>): <span class="type">ForecastViewModel</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">getForecastByCity</h3>
+            <p class="element-description">Получает прогноз по названию города.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">getForecastByCity</span>(<span class="field">city</span>: <span class="type">string</span>): <span class="type">ForecastViewModel</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">getAstronomyByCoords</h3>
+            <p class="element-description">Получает астрономические данные по координатам.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">getAstronomyByCoords</span> (<span class="field">lat</span>: <span class="type">float</span>) (<span class="field">lon</span>: <span class="type">float</span>): <span class="type">AstronomyViewModel</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">getAstronomyByCity</h3>
+            <p class="element-description">Получает астрономические данные по названию города.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">getAstronomyByCity</span>(<span class="field">city</span>: <span class="type">string</span>): <span class="type">AstronomyViewModel</span> =</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

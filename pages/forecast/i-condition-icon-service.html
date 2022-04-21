@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>IConditionIconService Интерфейс (WeatherForecast)</title>
+    <link rel="stylesheet" href="/Resume/styles/layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-content.css">
+</head>
+<body>
+    <section class="dev-doc-info-section">
+        <div class="dev-doc-info-container">
+            <h1 class="header-text">IConditionIconService Интерфейс</h1>
+            <h2 class="subheader-text">Определение</h2>
+            <p>Пространство имен: <b>WeatherForecast.Dependencies</b></p>
+            <p>Сборка: <b>WeatherForecast.exe</b></p>
+            <p class="description">Интерфейс зависимости, предназначенной для получения иконок погодных состояний.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp">[&lt;<span class="type">Interface</span>&gt;]
+<!--             --><span class="keyword">type public</span> <span class="type">IConditionIconService</span> =</code></pre>
+                </div>
+            </div>
+
+            <h2 class="subheader-text">Методы</h2>
+            <h3 class="element-name">GetIconFilesByCode</h3>
+            <p class="description">Получение списка названий файлов иконок по коду погодного условия.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">abstract member</span> <span class="function">GetIconFilesByCode</span>: <span class="type">uint16</span> <span class="keyword">-&gt;</span> <span class="type">List</span>&lt;<span class="type">string</span>&gt;</code></pre>
+                </div>
+            </div>
+
+            <h2 class="subheader-text">Свойства</h2>
+            <h3 class="element-name">All</h3>
+            <p class="description">Список всех путей к файлам иконок, отображающих погодные условия.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp"><span class="keyword">abstract member</span> All: <span class="type">IEnumerable</span>&lt;<span class="type">List</span>&lt;<span class="type">string</span>&gt;&gt; <span class="keyword">with</span> get, set</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

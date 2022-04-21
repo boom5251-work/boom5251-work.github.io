@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ForecastViewModel Класс (WeatherForecast)</title>
+    <link rel="stylesheet" href="/Resume/styles/layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-content.css">
+</head>
+<body>
+<section class="dev-doc-info-section">
+    <div class="dev-doc-info-container">
+        <h1 class="header-text">WeatherViewModel Класс</h1>
+        <h2 class="subheader-text">Определение</h2>
+        <p>Пространство имен: <b>WeatherForecast.Models</b></p>
+        <p>Сборка: <b>WeatherForecast.exe</b></p>
+        <p class="description">Модель-представление. Содержит все погодные данные.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                    <pre><code class="lang-fsharp">[&lt;<span class="type">Class</span>&gt;]
+<!--             --><span class="keyword">type public</span> <span class="type">InfoViewModel</span>() =
+<!--             -->    <span class="keyword">interface</span> <span class="type">IConditionViewModel</span> <span class="keyword">with</span></code></pre>
+            </div>
+        </div>
+
+        <h2 class="subheader-text">Свойства</h2>
+        <h3 class="element-name">Current</h3>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, sequi.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">member val public</span> Current: <span class="type">CurrentWeatherViewModel</span> =
+<!--         -->    <span class="type">CurrentWeatherViewModel</span>() <span class="keyword">with</span> get, set</code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">Forecast</h3>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, sequi.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">member val public</span> Forecast: <span class="type">List</span>&lt;<span class="type">ForecastViewModel</span>&gt; =
+<!--         -->    <span class="type">List</span>&lt;<span class="type">ForecastViewModel</span>&gt;() <span class="keyword">with</span> get, set</code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">Astronomy</h3>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, sequi.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">member val public</span> Astronomy: <span class="type">AstronomyViewModel</span> =
+<!--         -->    <span class="type">AstronomyViewModel</span>() <span class="keyword">with</span> get, set</code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">IsInited</h3>
+        <p class="description">Указывает проинициализирована ли модель.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">member val public</span> <span class="field">this</span>.IsInited
+<!--         -->    <span class="keyword">with</span> get(): <span class="type">bool</span> = </code></pre>
+            </div>
+        </div>
+
+        <h2 class="subheader-text">Методы</h2>
+        <h3 class="element-name">GetSvgFileName</h3>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, sequi.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">member public</span> <span class="field">this.</span><span class="function">GetSvgFileName</span>
+<!--         -->    (<span class="field">service</span>: <span class="type">IConditionIconService</span>)
+<!--         -->    (<span class="field">conditionViewModel</span>: <span class="type">IConditionViewModel</span>): <span class="type">string</span> =</code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">GetStylesFileName</h3>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, sequi.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">member public</span> <span class="field">this.</span><span class="function">GetStylesFileName</span>(): <span class="type">string</span></code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

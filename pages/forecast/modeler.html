@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Modeler Модуль (WeatherForecast)</title>
+    <link rel="stylesheet" href="/Resume/styles/layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-content.css">
+</head>
+<body>
+<section class="dev-doc-info-section">
+    <div class="dev-doc-info-container">
+        <h1 class="header-text">Modeler Модуль</h1>
+        <h2 class="subheader-text">Определение</h2>
+        <p>Пространство имен: <b>WeatherForecast.Data</b></p>
+        <p>Сборка: <b>WeatherForecast.exe</b></p>
+        <p class="description">Модуль создает и инициализирует все модели представления на основе данных, полученных с сервера метеоданных WeatherApi.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">module public</span> <span class="type">Modeler</span> =</code></pre>
+            </div>
+        </div>
+
+        <h2 class="subheader-text">Поля</h2>
+        <h3 class="element-name">dateTimePattern</h3>
+        <p class="element-description">Строка-паттерн даты и времени.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let private</span> dateTimePattern: <span class="type">string</span> = <span class="string">"yyyy-MM-dd H:mm"</span></code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">timePattern</h3>
+        <p class="element-description">Строка-паттерн времени.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let private</span> timePattern: <span class="type">string</span> = <span class="string">"h:mm tt"</span></code></pre>
+            </div>
+        </div>
+
+        <h2 class="subheader-text">Функции</h2>
+        <h3 class="element-name">initLocation</h3>
+        <p class="element-description">Инициализирует данные местоположения в уже созданной модели-представлении текущей погоды.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let private</span> <span class="function">initLocation</span>
+<!--         -->    (<span class="field">jsonDocument</span>: <span class="type">JsonDocument</span>)
+<!--         -->    (<span class="field">viewModel</span>: <span class="type">CurrentWeatherViewModel</span>): <span class="type">unit</span></code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">initCondition</h3>
+        <p class="element-description">Инициализирует погодные условия в уже созданной модели-представлении текущей погоды.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let private</span> <span class="function">initCondition</span>
+<!--         -->    (<span class="field">jsonDocument</span>: <span class="type">JsonDocument</span>)
+<!--         -->    (<span class="field">viewModel</span>: <span class="type">CurrentWeatherViewModel</span>): <span class="type">unit</span></code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">initForecast</h3>
+        <p class="element-description">Инициализирует прогноз погоды на сутки в уже созданных моделях-представлениях прогноза погоды.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let private</span> <span class="function">initForecast</span>
+<!--         -->    (<span class="field">hours</span>: <span class="type">List</span>&lt;<span class="type">JsonElement</span>&gt;)
+<!--         -->    (<span class="field">localNow</span>: <span class="type">DateTime</span>)
+<!--         -->    (<span class="field">viewModels</span>: <span class="type">List</span>&lt;<span class="type">ForecastViewModel</span>&gt;): <span class="type">unit</span></code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">initAstronomy</h3>
+        <p class="element-description">Инициализирует астрономические данные в уже созданной модели-представлении астрономических данных.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let private</span> <span class="function">initAstronomy</span>
+<!--         -->    (<span class="field">jsonDocument</span>: <span class="type">JsonDocument</span>)
+<!--         -->    (<span class="field">viewModel</span>: <span class="type">AstronomyViewModel</span>): <span class="type">unit</span></code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">createCurrentWeatherViewModel</h3>
+        <p class="element-description">Создает новую модель-представление текущей погоды и запускает ее инициализацию.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">CreateCurrentWeatherViewModel</span>
+<!--         -->    (<span class="field">jsonDocument</span>: <span class="type">JsonDocument</span>): <span class="type">CurrentWeatherViewModel</span></code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">createForecastViewModels</h3>
+        <p class="element-description">Создает новые модели-представления прогноза погоды на сутки и запускает их инициализацию.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">createForecastViewModels</span>
+<!--         -->    (<span class="field">jsonDocument</span>: <span class="type">JsonDocument</span>): <span class="type">List</span>&lt;<span class="type">ForecastViewModel</span>&gt;</code></pre>
+            </div>
+        </div>
+
+        <h3 class="element-name">createAstronomyViewModel</h3>
+        <p class="element-description">Создает новую модель-представление астрономических данных и запускает ее инициализацию.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let public</span> <span class="function">CreateAstronomyViewModel</span>
+<!--         -->    (<span class="field">jsonDocument</span>: <span class="type">JsonDocument</span>): <span class="type">AstronomyViewModel</span></code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

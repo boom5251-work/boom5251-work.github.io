@@ -10,7 +10,19 @@
   font-family: "Intro-Bold";
   src: url("/Resume/resources/fonts/Intro-Bold.otf");
 }
+@font-face {
+  font-family: "Cascadia-Mono-Regular";
+  src: url("/Resume/resources/fonts/Cascadia-Mono.ttf");
+}
 html, body {
+  margin: 0;
+}
+
+p {
+  color: #646464;
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -19,7 +31,6 @@ header {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
 }
 
 .header-view-container {
@@ -46,7 +57,6 @@ header {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
 }
 
 .about-section {
@@ -54,7 +64,6 @@ header {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -69,7 +78,6 @@ header {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
   padding-bottom: 0;
 }
 
@@ -98,7 +106,6 @@ header {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
   padding-top: 0;
 }
 
@@ -122,7 +129,6 @@ header {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
 }
 
 footer {
@@ -130,7 +136,6 @@ footer {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -179,7 +184,6 @@ footer {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -191,7 +195,6 @@ footer {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
 }
 
 .project-goals-container {
@@ -204,7 +207,6 @@ footer {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  width: 80%;
 }
 
 .project-design-container {

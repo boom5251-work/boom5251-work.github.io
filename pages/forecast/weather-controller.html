@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherController Класс (WeatherForecast)</title>
+    <link rel="stylesheet" href="/Resume/styles/layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-content.css">
+</head>
+<body>
+    <section class="dev-doc-info-section">
+        <div class="dev-doc-info-container">
+            <h1 class="header-text">WeatherController Класс</h1>
+            <h2 class="subheader-text">Определение</h2>
+            <p>Пространство имен: <b>WeatherForecast.Controllers</b></p>
+            <p>Сборка: <b>WeatherForecast.exe</b></p>
+            <p class="description">Контроллер обрабатывает поступающие на сервер GET-запросы. Возвращает клиенту страницу с метеоданными.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp">[&lt;<span class="type">Class</span>&semi; <span class="type">ApiController</span>&gt;]
+<!--             --><span class="keyword">type public</span> <span class="type">WeatherController</span>() =
+<!--             -->    <span class="keyword">inherit</span> <span class="type">Controller</span>()</code></pre>
+                </div>
+            </div>
+
+            <h2 class="subheader-text">Методы</h2>
+            <h3 class="element-name">Index</h3>
+            <p class="element-description">Обрабатывает GET-запрос Index без параметров.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp">&lbrack;&lt;<span class="type">HttpGet</span>&semi; <span class="type">Route</span>(<span class="string">"/"</span>)</span>&gt;]
+<!--             --><span class="keyword">member public</span> <span class="field">this</span>.<span class="function">Index</span>(): <span class="type">IActionResult</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">GetWeatherByCoords</h3>
+            <p class="element-description">Обрабатывает GET-запрос с параметрами широты и долготы.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp">&lbrack;&lt;<span class="type">HttpGet</span>&semi; <span class="type">Route</span>(<span class="string">"/{lat:float},{lon:float}"</span>)</span>&gt;]
+<!--             --><span class="keyword">member public</span> <span class="field">this</span>.<span class="function">GetWeatherByCoords</span> (<span class="field">lat</span>: <span class="type">float</span>) (<span class="field">lon</span>: <span class="type">float</span>): <span class="type">ViewResult</span> =</code></pre>
+                </div>
+            </div>
+
+            <h3 class="element-name">GetWeatherByCity</h3>
+            <p class="element-description">Обрабатывает GET-запрос с параметром названия города.</p>
+            <div class="code-block">
+                <div class="code-header">
+                    <span>F#</span>
+                </div>
+                <div class="code-content">
+                    <pre><code class="lang-fsharp">&lbrack;&lt;<span class="type">HttpGet</span>&semi; <span class="type">Route</span>(<span class="string">"/{city}"</span>)</span>&gt;]
+<!--             --><span class="keyword">member public</span> <span class="field">this</span>.<span class="function">GetWeatherByCity</span>(<span class="field">city</span>: <span class="type">string</span>): <span class="type">ViewResult</span> =</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

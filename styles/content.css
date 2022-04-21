@@ -10,7 +10,19 @@
   font-family: "Intro-Bold";
   src: url("/Resume/resources/fonts/Intro-Bold.otf");
 }
+@font-face {
+  font-family: "Cascadia-Mono-Regular";
+  src: url("/Resume/resources/fonts/Cascadia-Mono.ttf");
+}
 html, body {
+  margin: 0;
+}
+
+p {
+  color: #646464;
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.7;
   margin: 0;
 }
 
@@ -61,14 +73,6 @@ html, body {
 
 .header-text-small {
   font-size: max(0.55em, min(2.1em, 4vw));
-}
-
-p {
-  color: #646464;
-  font-family: "Intro-Light";
-  font-size: max(0.3em, min(1.1em, 4vw));
-  line-height: 1.7;
-  margin: 0;
 }
 
 .subheader-text {
@@ -182,6 +186,7 @@ p {
   color: #0f93ff;
   font-family: "Intro-Regular";
   font-size: 14pt;
+  margin-bottom: 10px;
   text-decoration: none;
   transition: 0.5s;
 }

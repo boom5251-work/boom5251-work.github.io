@@ -1,0 +1,68 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ConditionIconService Класс (WeatherForecast)</title>
+    <link rel="stylesheet" href="/Resume/styles/layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-layout.css">
+    <link rel="stylesheet" href="/Resume/styles/doc-content.css">
+</head>
+<body>
+<section class="dev-doc-info-section">
+    <div class="dev-doc-info-container">
+        <h1 class="header-text">ConditionIconService Класс</h1>
+        <h2 class="subheader-text">Определение</h2>
+        <p>Пространство имен: <b>WeatherForecast.Dependencies</b></p>
+        <p>Сборка: <b>WeatherForecast.exe</b></p>
+        <p class="description">Класс зависимости, предназначенной для получения иконок погодных состояний.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                    <pre><code class="lang-fsharp">[&lt;<span class="type">Class</span>&gt;]
+<!--             --><span class="keyword">type public</span> <span class="type">ConditionIconService</span>() =
+<!--             -->    <span class="keyword">interface</span> <span class="type">IConditionIconService</span> <span class="keyword">with</span></code></pre>
+            </div>
+        </div>
+
+        <h2 class="subheader-text">Поля</h2>
+        <h3 class="element-name">conditions</h3>
+        <p class="description">Список всех погодных состояний.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">let mutable</span> <span class="mutable">conditions</span>: <span class="type">List</span>&lt;<span class="type">string</span>&gt; = <span class="keyword">null</span></code></pre>
+            </div>
+        </div>
+
+        <h2 class="subheader-text">Методы</h2>
+        <h3 class="element-name">GetIconFilesByCode</h3>
+        <p class="description">Получение списка названий файлов иконок по коду погодного условия.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">member</span> <span class="field">this</span>.<span class="span function">GetIconFilesByCode</span>(<span class="field">conditionCode</span>: <span class="type">uint16</span>): <span class="type">List</span>&lt;<span class="type">string</span>&gt; =</code></pre>
+            </div>
+        </div>
+
+        <h2 class="subheader-text">Свойства</h2>
+        <h3 class="element-name">All</h3>
+        <p class="description">Список всех путей к файлам иконок, отображающих погодные условия.</p>
+        <div class="code-block">
+            <div class="code-header">
+                <span>F#</span>
+            </div>
+            <div class="code-content">
+                <pre><code class="lang-fsharp"><span class="keyword">member val</span> All: <span class="type">IEnumerable</span>&lt;<span class="type">List</span>&lt;<span class="type">string</span>&gt;&gt; =
+<!--         -->    <span class="mutable">conditions</span>.<span class="span function">Select</span>(<span class="keyword">fun</span> <span class="field">condition</span> <span class="keyword">-></span> <span class="field">condition</span>.SvgFilePaths.<span class="function">ToList</span>())
+<!--         -->    <span class="keyword">with</span> get</code></pre>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
