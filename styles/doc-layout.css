@@ -26,7 +26,7 @@ p {
   margin: 0;
 }
 
-.dev-doc-info-section {
+.dev-doc-info-section, .user-doc-info-section {
   margin: 0 auto;
   max-width: 1200px;
   min-width: 500px;
@@ -34,7 +34,7 @@ p {
   width: 50%;
 }
 
-.dev-doc-info-container {
+.dev-doc-info-container, .user-doc-info-container {
   margin: 100px 0 0 0;
 }
 

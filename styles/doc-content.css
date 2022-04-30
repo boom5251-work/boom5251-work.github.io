@@ -148,4 +148,13 @@ pre {
   color: #ffd21c;
 }
 
+.doc-image {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.user-doc-text {
+  padding-top: 20px;
+}
+
 /*# sourceMappingURL=doc-content.css.map */
