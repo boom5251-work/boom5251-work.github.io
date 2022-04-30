@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Intro-Light";
+  src: url("/Resume/resources/fonts/Intro-Light.otf");
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url("/Resume/resources/fonts/Intro-Regular.otf");
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url("/Resume/resources/fonts/Intro-Bold.otf");
+}
+@font-face {
+  font-family: "Cascadia-Mono-Regular";
+  src: url("/Resume/resources/fonts/Cascadia-Mono.ttf");
+}
+html, body {
+  margin: 0;
+}
+
+p {
+  color: #646464;
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.7;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 250px;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1, h2 {
+  font-family: Intro-Bold;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.link {
+  color: #0f93ff;
+  display: block;
+  font-family: "Intro-Regular";
+  font-size: 1.2em;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.link:hover {
+  color: #8fccff;
+}
+
+/*# sourceMappingURL=404.css.map */
