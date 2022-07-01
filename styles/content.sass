@@ -38,9 +38,15 @@
 
 
 
-.main-image
-  min-width: 400px
-  width: 100%
+.parallax
+  height: 360px
+  perspective: 1px
+  overflow-y: hidden
+
+  >.main-image
+    position: fixed
+    min-width: 400px
+    width: 100%
 
 
 .header-text-small

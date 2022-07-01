@@ -66,7 +66,13 @@ p {
   color: #a333ff;
 }
 
-.main-image {
+.parallax {
+  height: 360px;
+  perspective: 1px;
+  overflow-y: hidden;
+}
+.parallax > .main-image {
+  position: fixed;
   min-width: 400px;
   width: 100%;
 }
