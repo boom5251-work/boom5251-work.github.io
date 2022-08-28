@@ -144,12 +144,19 @@ footer
 
 
 
-.project-main-images-section
+.project-main-images-section.forecast
   @include header-section-footer()
   display: flex
   flex-direction: row
   flex-wrap: wrap
   justify-content: space-between
+
+
+.project-main-images-section.moex
+  @include  header-section-footer()
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
 
 
 

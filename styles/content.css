@@ -200,11 +200,17 @@ p {
   color: #8fccff;
 }
 
-.project-main-image {
+.project-main-image.forecast {
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   margin-bottom: 2%;
   width: 49%;
+}
+
+.project-main-image.moex {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin: 0 25px 100px 0;
+  max-width: 220px;
 }
 
 .project-goals-text {

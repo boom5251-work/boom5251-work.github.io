@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <script src="libs/jquery.min.js"></script>
-    <script src="scripts/main-page-behaviour.js"></script>
-    <script src="scripts/parallax.js"></script>
+    <script src="/libs/jquery.min.js"></script>
+    <script src="/scripts/main-page-behaviour.js"></script>
+    <script src="/scripts/parallax.js"></script>
 
     <header>
         <a href="/"><img class="header-footer-logo" src="/resources/images/main-logo.png"></a>
@@ -155,10 +155,10 @@
                 </div>
             </div>
             <div class="my-projects-items-container">
-                <div class="my-projects-item">
-                    <img src="/resources/images/project-preview.png" />
-                    <h3>Название проекта 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt molestiae natus quas!</p>
+                <div class="my-projects-item" onclick="goToPage('/pages/moex/moex.html')">
+                    <img src="/resources/images/moex-preview.png" />
+                    <h3>iMOEX</h3>
+                    <p>Мобильное приложение, позволяющее просматривать данные московской биржи: новости, события, списки ценных бумаг и их статистика.</p>
                 </div>
                 <div class="my-projects-item" onclick="goToPage('/pages/graduate-work/graduate-work.html')">
                     <img src="/resources/images/project-preview.png" />

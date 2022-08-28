@@ -179,7 +179,7 @@ footer {
   width: 30%;
 }
 
-.project-main-images-section {
+.project-main-images-section.forecast {
   margin: 0 auto;
   max-width: 1200px;
   min-width: 500px;
@@ -188,6 +188,16 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.project-main-images-section.moex {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .project-goals-section {
