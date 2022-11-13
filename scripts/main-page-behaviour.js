@@ -11,7 +11,7 @@ function countAge() {
     let ageSpan = document.getElementById("age-span");
 
     let now = new Date();
-    let dateOfBirth = new Date(2001, 11, 3);
+    let dateOfBirth = new Date(2001, 11-1, 3);
     let dateOfBirthThisYear = new Date(now.getFullYear(), dateOfBirth.getMonth(), dateOfBirth.getDate());
 
     let age = now.getFullYear() - dateOfBirth.getFullYear();
