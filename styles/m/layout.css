@@ -33,13 +33,21 @@ header, section {
 
 footer {
   margin: 0;
-  padding: 50px;
+  padding: 75px 50px;
 }
 
 .main-image-container {
   display: flex;
   justify-content: center;
-  margin: 50px 0 125px 0;
+  margin: 50px 0 75px 0;
+}
+
+.header-items-svg-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 125px;
 }
 
 .about-section-container {
@@ -57,7 +65,7 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 .background-bottom-block {
@@ -66,8 +74,8 @@ footer {
 
 .phone-email-block {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 /*# sourceMappingURL=layout.css.map */

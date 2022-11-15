@@ -23,6 +23,14 @@ p
     color: $main-purple-color
 
 
+.link-icon-svg
+  fill: $main-grey-color
+  height: 70px
+  margin: 0 25px
+  width: 70px
+
+
+
 .subheader-text
   @include subheader-text
   margin-bottom: 50px
@@ -34,7 +42,7 @@ p
   flex-direction: row
   flex-wrap: nowrap
   max-width: 600px
-  margin-bottom: 25px
+  margin-bottom: min(50px, 4vh)
   min-width: 400px
   padding-right: 30px
 
@@ -52,14 +60,14 @@ p
 
 
 .work-together-text
-  margin-bottom: 50px
+  margin-bottom: 75px
 
 
 .phone-email-link
   color: black
   font-family: 'Intro-Bold'
-  font-size: max(2vh, min(1.8em, 4vw))
-  margin: 0 50px 25px 0
+  font-size: max(2vh, min(1.4em, 4vw))
+  margin: 0 50px 50px 0
   min-width: 30vh
   text-decoration: none
 
