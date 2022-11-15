@@ -33,7 +33,7 @@ header, section {
 
 footer {
   margin: 0;
-  padding: 75px 50px;
+  padding: 100px 50px;
 }
 
 .main-image-container {
@@ -58,6 +58,7 @@ footer {
 }
 .about-section-container > p, .about-section-container div {
   max-width: 90vh;
+  width: auto;
 }
 
 .my-skills-items-container {
@@ -83,6 +84,21 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+}
+
+.project-info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 140vh;
+}
+
+.project-main-images-section.forecast {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=layout.css.map */

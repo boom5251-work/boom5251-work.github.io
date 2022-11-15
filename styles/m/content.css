@@ -28,6 +28,7 @@ p {
 
 p {
   margin-bottom: 25px;
+  font-size: 14pt;
 }
 
 .main-image {
@@ -83,7 +84,6 @@ p {
 
 .my-projects-items-container > img {
   border-radius: 10px;
-  display: block;
   max-width: 50vh;
   margin-bottom: 50px;
   min-width: 400px;
@@ -105,6 +105,60 @@ p {
 
 .phone-email-link:last-of-type {
   margin: 0;
+}
+
+.project-header-view-container > .header-text {
+  margin-bottom: 50px;
+}
+
+.project-description-text {
+  margin-bottom: 50px;
+}
+
+.project-info-container > div {
+  display: flex;
+  flex-direction: column;
+  font-size: max(1.5em, min(4vw, 4vh));
+  margin-bottom: 50px;
+}
+.project-info-container .header {
+  font-family: "Intro-Bold";
+  margin-bottom: 25px;
+}
+.project-info-container .text {
+  font-family: "Intro-Light";
+  margin-bottom: 15px;
+}
+.project-info-container .text:last-of-type {
+  margin: 0;
+}
+.project-info-container .link {
+  color: rgb(15, 147, 255);
+  font-family: "Intro-Regular";
+  text-decoration: none;
+}
+
+.project-main-image.forecast {
+  border-radius: 5px;
+  max-width: 50vh;
+  margin-bottom: 50px;
+  min-width: 400px;
+  width: auto;
+}
+
+.project-design-text {
+  margin-bottom: 50px;
+}
+.project-design-text > .link {
+  color: rgb(15, 147, 255);
+  font-family: "Intro-Regular";
+  text-decoration: none;
+}
+
+.project-design-image {
+  border-radius: 10px;
+  min-width: 400px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=content.css.map */
