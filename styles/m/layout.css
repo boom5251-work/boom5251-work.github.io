@@ -101,4 +101,13 @@ footer {
   justify-content: space-between;
 }
 
+.project-main-images-section.moex {
+  overflow-x: scroll;
+}
+.project-main-images-section.moex > .project-main-images-container.moex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 /*# sourceMappingURL=layout.css.map */
