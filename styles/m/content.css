@@ -96,7 +96,7 @@ p {
 
 .phone-email-link {
   color: black;
-  font-family: "Intro-Bold";
+  font-family: "Intro-Regular";
   font-size: max(1.5em, min(4vw, 4vh));
   margin: 0 50px 50px 0;
   min-width: 30vh;
