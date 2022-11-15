@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            goToPage("/m/forecast.html")
+        }
+    </script>
+
     <header>
         <a href="/index.html"><img class="header-footer-logo" src="/resources/images/main-logo.png"></a>
         <div class="project-header-view-container">

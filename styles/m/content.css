@@ -77,8 +77,17 @@ p {
 }
 .my-skills-item > span {
   font-family: "Intro-Regular";
-  font-size: max(0.3em, min(2em, 4vw));
+  font-size: max(1.5em, min(4vw, 4vh));
   margin: auto 0 auto 25px;
+}
+
+.my-projects-items-container > img {
+  border-radius: 10px;
+  display: block;
+  max-width: 50vh;
+  margin-bottom: 50px;
+  min-width: 400px;
+  width: auto;
 }
 
 .work-together-text {
@@ -88,7 +97,7 @@ p {
 .phone-email-link {
   color: black;
   font-family: "Intro-Bold";
-  font-size: max(0.3em, min(2em, 4vw));
+  font-size: max(1.5em, min(4vw, 4vh));
   margin: 0 50px 50px 0;
   min-width: 30vh;
   text-decoration: none;

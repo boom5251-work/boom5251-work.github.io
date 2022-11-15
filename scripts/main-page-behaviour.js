@@ -7,6 +7,7 @@ function ready() {
 }
 
 
+
 function countAge() {
     let ageSpan = document.getElementById("age-span");
 
