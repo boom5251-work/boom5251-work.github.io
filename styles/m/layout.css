@@ -39,15 +39,35 @@ footer {
 .main-image-container {
   display: flex;
   justify-content: center;
-  margin: 50px 0 75px 0;
+  margin: 50px 0 125px 0;
 }
 
-.header-text-container {
-  margin-left: 50px;
+.about-section-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-section-container > p, .about-section-container div {
+  max-width: 90vh;
+}
+
+.my-skills-items-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 50px;
 }
 
 .background-bottom-block {
   background-color: rgb(248, 248, 248);
+}
+
+.phone-email-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=layout.css.map */

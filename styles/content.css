@@ -19,7 +19,7 @@ html, body {
 }
 
 p {
-  color: #646464;
+  color: rgb(100, 100, 100);
   font-family: "Intro-Light";
   font-size: max(0.3em, min(1.1em, 4vw));
   line-height: 1.7;
@@ -33,14 +33,14 @@ p {
 }
 
 .header-items-line {
-  background-color: #aaaaaa;
+  background-color: rgb(170, 170, 170);
   height: 2px;
   max-width: 200px;
   width: 50%;
 }
 
 .link-icon-svg {
-  fill: #aaaaaa;
+  fill: rgb(170, 170, 170);
   height: 28px;
   margin: 0 15px;
   width: 28px;
@@ -48,7 +48,7 @@ p {
 }
 
 .link-icon-svg:hover {
-  fill: #a333ff;
+  fill: rgb(163, 51, 255);
 }
 
 .header-text {
@@ -63,7 +63,7 @@ p {
   margin-bottom: 15px;
 }
 .header-text .highlighted {
-  color: #a333ff;
+  color: rgb(163, 51, 255);
 }
 
 .parallax {
@@ -97,7 +97,7 @@ p {
   margin: 20px 0 20px 0;
 }
 .my-skills-item > svg {
-  fill: #a333ff;
+  fill: rgb(163, 51, 255);
   height: 18px;
   margin: auto 0;
   width: 18px;
@@ -158,7 +158,7 @@ p {
 }
 
 .phone-email-link:hover {
-  color: #aaaaaa;
+  color: rgb(170, 170, 170);
 }
 
 .footer-links-container > a {
@@ -170,7 +170,7 @@ p {
   transition: 0.5s;
 }
 .footer-links-container > a:hover {
-  color: #aaaaaa;
+  color: rgb(170, 170, 170);
 }
 
 .project-description-text {
@@ -189,7 +189,7 @@ p {
   margin-bottom: 10px;
 }
 .project-info-container .link {
-  color: #0f93ff;
+  color: rgb(15, 147, 255);
   font-family: "Intro-Regular";
   font-size: 14pt;
   margin-bottom: 10px;
@@ -227,7 +227,7 @@ p {
   margin: 60px 0 0 0;
 }
 .project-design-text .link {
-  color: #0f93ff;
+  color: rgb(15, 147, 255);
   font-family: "Intro-Regular";
   text-decoration: none;
   transition: 0.5s;

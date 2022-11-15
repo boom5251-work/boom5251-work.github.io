@@ -1,5 +1,9 @@
-@import "../../main"
+@import '../../main'
 
+
+
+p
+  margin-bottom: 25px
 
 
 .main-image
@@ -10,6 +14,8 @@
 
 
 .header-text
+  font-family: "Intro-Bold"
+  font-size: max(0.3em, min(2em, 4vw))
   line-height: 1.5
   margin: 0
 
@@ -19,7 +25,7 @@
 
 .subheader-text
   @include subheader-text
-  margin-bottom: 25px
+  margin-bottom: 50px
 
 
 
@@ -27,12 +33,35 @@
   display: flex
   flex-direction: row
   flex-wrap: nowrap
+  max-width: 600px
+  margin-bottom: 25px
+  min-width: 400px
+  padding-right: 30px
 
   >svg
     fill: $main-purple-color
-    height: 50px
-    width: 50px
+    height: 40px
+    margin: auto 0
+    width: 40px
 
   >span
-    font-family: "Intro-Regular"
-    margin-left: 10px
+    font-family: 'Intro-Regular'
+    font-size: max(2vh, min(1.8em, 4vw))
+    margin: auto 0 auto 25px
+
+
+
+.work-together-text
+  margin-bottom: 50px
+
+
+.phone-email-link
+  color: black
+  font-family: 'Intro-Bold'
+  font-size: max(2vh, min(1.8em, 4vw))
+  margin: 0 50px 25px 0
+  min-width: 30vh
+  text-decoration: none
+
+.phone-email-link:last-of-type
+  margin: 0
