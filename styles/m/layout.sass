@@ -1,0 +1,31 @@
+@import "../../main"
+
+
+
+@mixin header-section-footer
+  padding: 50px
+  margin-bottom: 25px
+
+
+
+header, section
+  @include header-section-footer
+
+footer
+  margin: 0
+  padding: 50px
+
+
+
+.main-image-container
+  display: flex
+  justify-content: center
+  margin: 50px 0 75px 0
+
+
+.header-text-container
+  margin-left: 50px
+
+
+.background-bottom-block
+  background-color: $main-lightest-grey-color

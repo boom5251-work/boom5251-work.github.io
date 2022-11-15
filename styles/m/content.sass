@@ -1,0 +1,38 @@
+@import "../../main"
+
+
+
+.main-image
+  height: 50vw
+  max-height: 300px
+  max-width: 300px
+
+
+
+.header-text
+  line-height: 1.5
+  margin: 0
+
+  .highlighted
+    color: $main-purple-color
+
+
+.subheader-text
+  @include subheader-text
+  margin-bottom: 25px
+
+
+
+.my-skills-item
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+
+  >svg
+    fill: $main-purple-color
+    height: 50px
+    width: 50px
+
+  >span
+    font-family: "Intro-Regular"
+    margin-left: 10px

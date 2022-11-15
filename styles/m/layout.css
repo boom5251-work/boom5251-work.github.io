@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Intro-Light";
+  src: url("/resources/fonts/Intro-Light.otf");
+}
+@font-face {
+  font-family: "Intro-Regular";
+  src: url("/resources/fonts/Intro-Regular.otf");
+}
+@font-face {
+  font-family: "Intro-Bold";
+  src: url("/resources/fonts/Intro-Bold.otf");
+}
+@font-face {
+  font-family: "Cascadia-Mono-Regular";
+  src: url("/resources/fonts/Cascadia-Mono.ttf");
+}
+html, body {
+  margin: 0;
+}
+
+p {
+  color: rgb(100, 100, 100);
+  font-family: "Intro-Light";
+  font-size: max(0.3em, min(1.1em, 4vw));
+  line-height: 1.7;
+  margin: 0;
+}
+
+header, section {
+  padding: 50px;
+  margin-bottom: 25px;
+}
+
+footer {
+  margin: 0;
+  padding: 50px;
+}
+
+.main-image-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 75px 0;
+}
+
+.header-text-container {
+  margin-left: 50px;
+}
+
+.background-bottom-block {
+  background-color: rgb(248, 248, 248);
+}
+
+/*# sourceMappingURL=layout.css.map */
