@@ -110,4 +110,13 @@ footer {
   flex-wrap: nowrap;
 }
 
+> .screenshots-section.university {
+  overflow-x: scroll;
+}
+> .screenshots-section.university > .project-main-images-container.university {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 /*# sourceMappingURL=layout.css.map */
