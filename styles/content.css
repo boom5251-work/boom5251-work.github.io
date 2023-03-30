@@ -236,4 +236,8 @@ p {
   color: #8fccff;
 }
 
+> .screenshot {
+  width: 600px;
+}
+
 /*# sourceMappingURL=content.css.map */
