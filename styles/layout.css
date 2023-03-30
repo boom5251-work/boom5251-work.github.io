@@ -239,10 +239,14 @@ footer {
   max-width: 1200px;
   min-width: 500px;
   padding: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+}
+.screenshots-section > .images-container {
+  background-color: #DDD;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: 200px 200px 2760px;
+  margin-bottom: 60px;
+  padding: 50px;
 }
 
 /*# sourceMappingURL=layout.css.map */
