@@ -222,7 +222,8 @@ p {
   text-decoration: none;
   transition: 0.5s;
 }
-.project-goals-text ul {
+
+.project-goals-list {
   color: rgb(100, 100, 100);
   font-family: "Intro-Regular";
 }
