@@ -218,6 +218,7 @@ p {
 }
 .project-goals-text a {
   color: rgb(15, 147, 255);
+  cursor: pointer;
   font-family: "Intro-Regular";
   text-decoration: none;
   transition: 0.5s;
@@ -225,7 +226,11 @@ p {
 
 .project-goals-list {
   color: rgb(100, 100, 100);
-  font-family: "Intro-Regular";
+  font-family: "Intro-Light";
+  font-size: 18px;
+  margin: 20px 0 -20px 0;
+  line-height: 1.7;
+  padding-left: 35px;
 }
 
 .project-design-image {
