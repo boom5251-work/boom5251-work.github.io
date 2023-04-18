@@ -1928,8 +1928,8 @@
                         top: "10px"
                     },
                     "._board": {
-                        color: "black",
-                        "font-family": "Intro-Regular",
+                        color: "rgb(100, 100, 100)",
+                        "font-family": "Intro-Light",
                         "white-space": "nowrap",
                         overflow: "hidden",
                         "text-overflow": "ellipsis",
