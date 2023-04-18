@@ -1826,7 +1826,7 @@
                 },
                 "._pinner": {
                     color: "black",
-                    "font-family": "Manrope-Regular",
+                    "font-family": "Intro-Regular",
                     "white-space": "nowrap",
                     overflow: "hidden",
                     "text-overflow": "ellipsis",
@@ -1929,7 +1929,7 @@
                     },
                     "._board": {
                         color: "black",
-                        "font-family": "Manrope-Regular",
+                        "font-family": "Intro-Regular",
                         "white-space": "nowrap",
                         overflow: "hidden",
                         "text-overflow": "ellipsis",
