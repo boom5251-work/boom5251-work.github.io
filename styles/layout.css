@@ -212,6 +212,17 @@ footer {
   max-width: 800px;
 }
 
+.gallery-section {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 500px;
+  padding: 20px;
+}
+
+.gallery-container {
+  margin: 100px 0;
+}
+
 .project-design-section {
   margin: 0 auto;
   max-width: 1200px;
