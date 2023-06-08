@@ -259,9 +259,14 @@ footer {
   background-color: #DDD;
   display: grid;
   grid-template-columns: repeat(2, 400px);
-  grid-template-rows: 200px 200px 2760px;
   margin-bottom: 60px;
   padding: 50px;
+}
+.screenshots-section > .images-container.university {
+  grid-template-rows: 200px 200px 2760px;
+}
+.screenshots-section > .images-container.candle-shop {
+  grid-template-rows: 200px 200px 1783px;
 }
 
 /*# sourceMappingURL=layout.css.map */

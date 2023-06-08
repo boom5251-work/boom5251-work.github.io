@@ -223,6 +223,9 @@ p {
   text-decoration: none;
   transition: 0.5s;
 }
+.project-goals-text a:hover {
+  color: #8fccff;
+}
 
 .project-goals-list {
   color: rgb(100, 100, 100);
@@ -257,14 +260,20 @@ p {
   width: 700px;
 }
 
-.screenshot:first-of-type {
+.screenshot:not(:last-of-type) {
   grid-column: 1;
   grid-row: 1;
+  z-index: 0;
+}
+
+.screenshot.additional {
+  transform: translateY(375px);
 }
 
 .screenshot:last-of-type {
   grid-column: 2;
   grid-row: 2;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=content.css.map */
