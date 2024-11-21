@@ -1,18 +1,18 @@
 @font-face {
-  font-family: "Intro-Light";
-  src: url("/resources/fonts/Intro-Light.otf");
+  font-family: "Montserrat-Light";
+  src: url("/resources/fonts/Montserrat-Light.otf");
 }
 @font-face {
-  font-family: "Intro-Regular";
-  src: url("/resources/fonts/Intro-Regular.otf");
+  font-family: "Montserrat-Regular";
+  src: url("/resources/fonts/Montserrat-Regular.otf");
 }
 @font-face {
-  font-family: "Intro-Bold";
-  src: url("/resources/fonts/Intro-Bold.otf");
+  font-family: "Montserrat-Bold";
+  src: url("/resources/fonts/Montserrat-Bold.otf");
 }
 @font-face {
-  font-family: "Cascadia-Mono-Regular";
-  src: url("/resources/fonts/Cascadia-Mono.ttf");
+  font-family: "JetBrainsMonoNL-Regular-Regular";
+  src: url("/resources/fonts/JetBrainsMonoNL-Regular.ttf");
 }
 html, body {
   margin: 0;
@@ -20,7 +20,7 @@ html, body {
 
 p {
   color: rgb(100, 100, 100);
-  font-family: "Intro-Light";
+  font-family: "Montserrat-Light";
   font-size: max(0.3em, min(1.1em, 4vw));
   line-height: 1.7;
   margin: 0;
@@ -53,7 +53,7 @@ p {
 
 .header-text {
   display: block;
-  font-family: "Intro-Bold";
+  font-family: "Montserrat-Bold";
   font-size: max(0.8em, min(3.3em, 4vw));
   text-space: 1.3;
   margin: 0;
@@ -82,7 +82,7 @@ p {
 }
 
 .subheader-text {
-  font-family: "Intro-Bold";
+  font-family: "Montserrat-Bold";
   font-size: max(0.5em, min(2.2em, 4vw));
   margin: 0;
 }
@@ -104,7 +104,7 @@ p {
   transform: translateY(-1px);
 }
 .my-skills-item > span {
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 16pt;
   margin-left: 10px;
 }
@@ -120,13 +120,13 @@ p {
   width: 100%;
 }
 .my-projects-item > h3 {
-  font-family: "Intro-Bold";
+  font-family: "Montserrat-Bold";
   font-size: max(0.5em, min(2.2em, 4vw));
   transition: 0.5s;
   margin: 30px 0 0 0;
 }
 .my-projects-item > p {
-  font-family: "Intro-Light";
+  font-family: "Montserrat-Light";
   font-size: max(0.3em, min(1.1em, 4vw));
   transition: 0.5s;
   margin: 15px 0;
@@ -150,7 +150,7 @@ p {
 .phone-email-link {
   color: black;
   width: fit-content;
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   font-size: max(0.3em, min(1.1em, 4vw));
   margin-bottom: 12px;
   text-decoration: none;
@@ -163,7 +163,7 @@ p {
 
 .footer-links-container > a {
   color: black;
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 12pt;
   margin: auto 0 auto 20px;
   text-decoration: none;
@@ -178,19 +178,19 @@ p {
 }
 
 .project-info-container .header {
-  font-family: "Intro-Bold";
+  font-family: "Montserrat-Bold";
   font-size: 14pt;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 .project-info-container .text {
-  font-family: "Intro-Light";
+  font-family: "Montserrat-Light";
   font-size: 14pt;
   margin-bottom: 10px;
 }
 .project-info-container .link {
   color: rgb(15, 147, 255);
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   font-size: 14pt;
   margin-bottom: 10px;
   text-decoration: none;
@@ -219,7 +219,7 @@ p {
 .project-goals-text a {
   color: rgb(15, 147, 255);
   cursor: pointer;
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   text-decoration: none;
   transition: 0.5s;
 }
@@ -229,7 +229,7 @@ p {
 
 .project-goals-list {
   color: rgb(100, 100, 100);
-  font-family: "Intro-Light";
+  font-family: "Montserrat-Light";
   font-size: 18px;
   margin: 20px 0 -20px 0;
   line-height: 1.7;
@@ -247,7 +247,7 @@ p {
 }
 .project-design-text .link {
   color: rgb(15, 147, 255);
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   text-decoration: none;
   transition: 0.5s;
 }

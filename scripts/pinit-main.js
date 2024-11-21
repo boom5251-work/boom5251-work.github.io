@@ -1826,7 +1826,7 @@
                 },
                 "._pinner": {
                     color: "black",
-                    "font-family": "Intro-Regular",
+                    "font-family": "Montserrat-Regular",
                     "white-space": "nowrap",
                     overflow: "hidden",
                     "text-overflow": "ellipsis",
@@ -1895,7 +1895,7 @@
                             bottom: "0"
                         },
                         "._string": {
-                            "font-family": "Intro-Light",
+                            "font-family": "Montserrat-Light",
                             "white-space": "pre",
                             color: "rgb(100, 100, 100)",
                             "font-size": "13px",
@@ -1929,7 +1929,7 @@
                     },
                     "._board": {
                         color: "rgb(100, 100, 100)",
-                        "font-family": "Intro-Light",
+                        "font-family": "Montserrat-Light",
                         "white-space": "nowrap",
                         overflow: "hidden",
                         "text-overflow": "ellipsis",

@@ -1,18 +1,18 @@
 @font-face {
-  font-family: "Intro-Light";
-  src: url("/resources/fonts/Intro-Light.otf");
+  font-family: "Montserrat-Light";
+  src: url("/resources/fonts/Montserrat-Light.otf");
 }
 @font-face {
-  font-family: "Intro-Regular";
-  src: url("/resources/fonts/Intro-Regular.otf");
+  font-family: "Montserrat-Regular";
+  src: url("/resources/fonts/Montserrat-Regular.otf");
 }
 @font-face {
-  font-family: "Intro-Bold";
-  src: url("/resources/fonts/Intro-Bold.otf");
+  font-family: "Montserrat-Bold";
+  src: url("/resources/fonts/Montserrat-Bold.otf");
 }
 @font-face {
-  font-family: "Cascadia-Mono-Regular";
-  src: url("/resources/fonts/Cascadia-Mono.ttf");
+  font-family: "JetBrainsMonoNL-Regular-Regular";
+  src: url("/resources/fonts/JetBrainsMonoNL-Regular.ttf");
 }
 html, body {
   margin: 0;
@@ -20,7 +20,7 @@ html, body {
 
 p {
   color: rgb(100, 100, 100);
-  font-family: "Intro-Light";
+  font-family: "Montserrat-Light";
   font-size: max(0.3em, min(1.1em, 4vw));
   line-height: 1.7;
   margin: 0;
@@ -38,7 +38,7 @@ p {
 }
 
 .header-text {
-  font-family: "Intro-Bold";
+  font-family: "Montserrat-Bold";
   font-size: max(0.3em, min(2em, 4vw));
   line-height: 1.5;
   margin: 0;
@@ -55,7 +55,7 @@ p {
 }
 
 .subheader-text {
-  font-family: "Intro-Bold";
+  font-family: "Montserrat-Bold";
   font-size: max(0.5em, min(2.2em, 4vw));
   margin: 0;
   margin-bottom: 50px;
@@ -77,7 +77,7 @@ p {
   width: 40px;
 }
 .my-skills-item > span {
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   font-size: max(1.5em, min(4vw, 4vh));
   margin: auto 0 auto 25px;
 }
@@ -96,7 +96,7 @@ p {
 
 .phone-email-link {
   color: black;
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   font-size: max(1.5em, min(4vw, 4vh));
   margin: 0 50px 50px 0;
   min-width: 30vh;
@@ -122,11 +122,11 @@ p {
   margin-bottom: 50px;
 }
 .project-info-container .header {
-  font-family: "Intro-Bold";
+  font-family: "Montserrat-Bold";
   margin-bottom: 25px;
 }
 .project-info-container .text {
-  font-family: "Intro-Light";
+  font-family: "Montserrat-Light";
   margin-bottom: 15px;
 }
 .project-info-container .text:last-of-type {
@@ -134,7 +134,7 @@ p {
 }
 .project-info-container .link {
   color: rgb(15, 147, 255);
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   text-decoration: none;
 }
 
@@ -160,7 +160,7 @@ p {
 }
 .project-design-text > .link {
   color: rgb(15, 147, 255);
-  font-family: "Intro-Regular";
+  font-family: "Montserrat-Regular";
   text-decoration: none;
 }
 

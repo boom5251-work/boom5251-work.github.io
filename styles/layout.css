@@ -1,18 +1,18 @@
 @font-face {
-  font-family: "Intro-Light";
-  src: url("/resources/fonts/Intro-Light.otf");
+  font-family: "Montserrat-Light";
+  src: url("/resources/fonts/Montserrat-Light.otf");
 }
 @font-face {
-  font-family: "Intro-Regular";
-  src: url("/resources/fonts/Intro-Regular.otf");
+  font-family: "Montserrat-Regular";
+  src: url("/resources/fonts/Montserrat-Regular.otf");
 }
 @font-face {
-  font-family: "Intro-Bold";
-  src: url("/resources/fonts/Intro-Bold.otf");
+  font-family: "Montserrat-Bold";
+  src: url("/resources/fonts/Montserrat-Bold.otf");
 }
 @font-face {
-  font-family: "Cascadia-Mono-Regular";
-  src: url("/resources/fonts/Cascadia-Mono.ttf");
+  font-family: "JetBrainsMonoNL-Regular-Regular";
+  src: url("/resources/fonts/JetBrainsMonoNL-Regular.ttf");
 }
 html, body {
   margin: 0;
@@ -20,7 +20,7 @@ html, body {
 
 p {
   color: rgb(100, 100, 100);
-  font-family: "Intro-Light";
+  font-family: "Montserrat-Light";
   font-size: max(0.3em, min(1.1em, 4vw));
   line-height: 1.7;
   margin: 0;
