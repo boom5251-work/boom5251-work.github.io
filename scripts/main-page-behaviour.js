@@ -27,7 +27,7 @@ function countAge() {
         case '1':
             ageStr += " год";
             break;
-        case '2' | '3' | '4':
+        case '2': case '3': case '4':
             ageStr += " года"
             break;
         default:
