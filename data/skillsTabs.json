@@ -1,0 +1,109 @@
+[
+  {
+    "items": [
+      {
+        "name": "HTML5",
+        "icon": "html.svg",
+        "level": 75
+      },
+      {
+        "name": "CSS",
+        "icon": "css.svg",
+        "level": 80
+      },
+      {
+        "name": "Sass/SCSS",
+        "icon": "sass.svg",
+        "level": 70
+      },
+      {
+        "name": "Javascript",
+        "icon": "js.svg",
+        "level": 70
+      },
+      {
+        "name": "TypeScript",
+        "icon": "ts.svg",
+        "level": 80
+      },
+      {
+        "name": "Angular",
+        "icon": "angular.svg",
+        "level": 75
+      },
+      {
+        "name": "Vue",
+        "icon": "vue.svg",
+        "level": 65
+      },
+      {
+        "name": "MAUI",
+        "icon": "dotnet.svg",
+        "level": 60
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "name": "C#",
+        "icon": "cs.svg",
+        "level": 90
+      },
+      {
+        "name": "ASP.NET",
+        "icon": "dotnet.svg",
+        "level": 80
+      },
+      {
+        "name": "Blazor",
+        "icon": "blazor.svg",
+        "level": 70
+      },
+      {
+        "name": "Entity Framework",
+        "icon": "ef.svg",
+        "level": 95
+      },
+      {
+        "name": "MS SQL Server",
+        "icon": "mssqlserver.svg",
+        "level": 65
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongo.svg",
+        "level": 75
+      },
+      {
+        "name": "IIS",
+        "icon": "iis.svg",
+        "level": 70
+      }
+    ]
+  },
+  {
+    "items": [
+      {
+        "name": "Entity Framework",
+        "icon": "ef.svg",
+        "level": 95
+      },
+      {
+        "name": "T-SQL",
+        "icon": "tsql.svg",
+        "level": 65
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "postgresql.svg",
+        "level": 60
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongo.svg",
+        "level": 75
+      }
+    ]
+  }
+]

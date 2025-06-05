@@ -1,0 +1,100 @@
+{
+  "header": {
+    "name": "Viktor Kuljikov",
+    "homeButton": "Naslovna",
+    "aboutMeButton": "O meni",
+    "languageSelectButton": "Jezik"
+  },  
+  "hello": {
+    "title": {
+      "hello": "Zdravo! ",
+      "helloName": "Moje ime je Viktor",
+      "occupationPrefix": "Ja sam ",
+      "occupations": [
+        "Programer C# & TypeScript",
+        "Fullstack programer",
+        "ASP.NET Core programer"
+      ],
+      "additional": "Spreman sam za ",
+      "additionalHighlighted": "teške zadatke"
+    },
+    "showMoreButton": "Prikaži više"
+  },
+  "whyMe": {
+    "title": {
+      "common": "Zašto me vredi zaposliti za ",
+      "project": "vaš projekat"
+    },
+    "experience": {
+      "years": {
+        "startDate": "2021-01-01",
+        "getYearsWord": {
+          "arguments": "years",
+          "body": "const d = years % 10; if (years >= 10 && years <= 19 || d >= 5 && d <= 9 || d === 0) return 'godina'; else if (d === 1) return 'godinu dana'; else return 'godine';"
+        },
+        "label": "Komercijalnog iskustva"
+      },
+      "education": {
+        "info": "Visoko IT",
+        "label": "Obrazovanje (bachelor)"
+      }
+    }
+  },
+  "educationExperience": {
+    "title": "Moj profesionalni put",
+    "education": {
+      "title": "Obrazovanje",
+      "items": [
+        {
+          "date": "Moskva, 2019-2023",
+          "header": "Informatika i računarstvo",
+          "additional": "RTU «MIREA» (bakalavriat)",
+          "isRed": false
+        },
+        {
+          "date": "Moskva, '23",
+          "header": "Frontend razvoj IT aplikacija",
+          "additional": "RTU «MIREA» (prekvalifikacija)",
+          "isRed": true
+        }
+      ]
+    },
+    "experience": {
+      "title": "Radno iskustvo",
+      "items": [
+        {
+          "date": "Januar 2021 - Februar 2022",
+          "header": "Fullstack veb programer",
+          "additional": "Pokretanje digitalizacije izgradnje"
+        },
+        {
+          "date": "Mart 2022 - Jul 2023",
+          "header": "Fullstack veb programer",
+          "additional": "Pokretanje digitalizacije transporta"
+        },
+        {
+          "date": "Jul 2023 - danas",
+          "header": "Backend programer",
+          "additional": "Hilbi"
+        }
+      ]
+    }
+  },
+  "toolsSkills": {
+    "title": {
+      "tools": "Alati",
+      "and": " i ",
+      "skills": "veštine"
+    },
+    "skills": {
+      "tabButtons": [
+        { "name": "Frontend" },
+        { "name": "Backend" },
+        { "name": "Baze podataka" }
+      ]
+    }
+  },
+  "footer": {
+    "rights": "Viktor Kuljikov. Sva prava zadržana."
+  }
+}

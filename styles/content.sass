@@ -1,251 +1,457 @@
-@import '../main'
+$commonForegroundColor: rgb(114, 82, 255)
+$commonGradient: linear-gradient(45deg, rgb(82, 113, 255), rgb(114, 82, 255), rgb(220, 82, 255))
 
 
-.header-footer-logo
-  cursor: pointer
-  user-select: none
-  width: 45px
-
-
-.header-items-line
-  background-color: $main-grey-color
-  height: 2px
-  max-width: 200px
-  width: 50%
-
-
-.link-icon-svg
-  fill: $main-grey-color
-  height: 28px
-  margin: 0 15px
-  width: 28px
-  transition: fill .5s
-
-.link-icon-svg:hover
-  fill: $main-purple-color
-
-
-
-.header-text
-  @include header-text
-
-  >span
-    display: inline-block
-    margin-bottom: 15px
-
-  .highlighted
-    color: $main-purple-color
-
-
-
-.parallax
-  height: 360px
-  perspective: 1px
-  overflow-y: hidden
-
-  >.main-image
-    position: fixed
-    min-width: 400px
-    width: 100%
-
-
-.header-text-small
-  font-size: max(0.55em, min(2.1em, calc(100vw * 4 / 100)))
-
-
-
-.subheader-text
-  @include subheader-text
-
-
-.my-skills-text, .my-projects-text
-  margin: 60px 0
-  width: 60%
-
-
-.my-skills-item
-  display: flex
-  margin: 20px 0 20px 0
-
-  >svg
-    fill: $main-purple-color
-    height: 18px
-    margin: auto 0
-    width: 18px
-    transform: translateY(-1px)
-
-  >span
-    font-family: 'Montserrat-Regular'
-    font-size: 16pt
-    margin-left: 10px
-
-
-
-.my-projects-item
-  cursor: pointer
-  margin: 0 0 60px 0
-  width: 46%
-
-  >img
-    border-radius: 8px
-    transition: .3s
-    width: 100%
-
-  >h3
-    font-family: 'Montserrat-Bold'
-    font-size: max(0.5em, min(2.2em, calc(100vw * 4 / 100)))
-    transition: .5s
-    margin: 30px 0 0 0
-
-  >p
-    font-family: 'Montserrat-Light'
-    font-size: max(0.3em, min(1.1em, calc(100vw * 4 / 100)))
-    transition: .5s
-    margin: 15px 0
-
-
-.my-projects-item:hover
-  >img
-    transform: translateY(-10px)
-
-  >h3
-    color: lighten(black, 45%)
-
-  >p
-    color: lighten($main-dark-grey-color, 20%)
-
-
-
-
-.work-together-text
-  margin: 60px 0
-  width: 40%
-
-
-.phone-email-link
-  color: black
-  width: fit-content
-  font-family: 'Montserrat-Regular'
-  font-size: max(0.3em, min(1.1em, calc(100vw * 4 / 100)))
-  margin-bottom: 12px
-  text-decoration: none
-  transition: .5s
-
-.phone-email-link:hover
-  color: $main-grey-color
-
-
-
-.footer-links-container
-  >a
-    color: black
-    font-family: 'Montserrat-Regular'
-    font-size: 12pt
-    margin: auto 0 auto 20px
-    text-decoration: none
-    transition: .5s
-
-  >a:hover
-    color: $main-grey-color
-
-
-.project-description-text
-  margin: 60px 0
-
-
-.project-info-container
-  .header
-    font-family: 'Montserrat-Bold'
-    font-size: 14pt
-    margin-bottom: 20px
-    text-transform: uppercase
-
-  .text
-    font-family: 'Montserrat-Light'
-    font-size: 14pt
-    margin-bottom: 10px
-
-  .link
-    color: $link-color
-    font-family: 'Montserrat-Regular'
-    font-size: 14pt
-    margin-bottom: 10px
-    text-decoration: none
-    transition: .5s
-
-  .link:hover
-    color: lighten($link-color, 25%)
-
-
-
-.project-main-image.forecast
-  border-radius: 5px
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
-  margin-bottom: 2%
-  width: 49%
-
-.project-main-image.moex
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
-  margin: 0 25px 100px 0
-  max-width: 220px
-
-
-
-.project-goals-text
-  margin: 60px 0 0 0
-
-  a
-    color: $link-color
+@mixin headerButton()
+    align-items: center
+    background-color: transparent
+    border: none
+    border-radius: 0.25rem
+    color: $commonForegroundColor
     cursor: pointer
-    font-family: 'Montserrat-Regular'
+    display: flex
+    font-family: "JetBrainsMono"
+    font-size: 16px
+    font-weight: bold
+    gap: 5px
+    padding: 10px 15px
+    text-align: center
     text-decoration: none
-    transition: .5s
 
-  a:hover
-    color: lighten($link-color, 25%)
-
-.project-goals-list
-  color: $main-dark-grey-color
-  font-family: 'Montserrat-Light'
-  font-size: 18px
-  margin: 20px 0 -20px 0
-  line-height: 1.7
-  padding-left: 35px
+    &:hover
+        backdrop-filter: blur(10px)
+        background: rgba(255, 255, 255, .1)
+        color: white
 
 
-.project-design-image
-  border-radius: 5px
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3)
-  width: 100%
-
-
-.project-design-text
-  margin: 60px 0 0 0
-
-  .link
-    color: $link-color
-    font-family: 'Montserrat-Regular'
-    text-decoration: none
-    transition: .5s
-
-  .link:hover
-    color: lighten($link-color, 25%)
+@mixin  toolsSkillsSubtitle()
+    display: inline-block
+    font-size: 1.5rem
+    line-height: 2rem
+    
 
 
 
-.screenshot
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)
-  width: 700px
+.highlighted
+    background: $commonGradient text
+    font-weight: bold !important
+    -webkit-text-fill-color: transparent
 
-.screenshot:not(:last-of-type)
-  grid-column: 1
-  grid-row: 1
-  z-index: 0
 
-.screenshot.additional
-  transform: translateY(375px)
 
-.screenshot:last-of-type
-  grid-column: 2
-  grid-row: 2
-  z-index: 1
+.header-section
+    backdrop-filter: blur(12px) 
+    color: $commonForegroundColor
+    z-index: 100
+
+    #header-name
+        line-height: 1.5rem
+        margin: 0
+
+        @media screen and (min-width: 768px)
+            line-height: 2.5rem
+
+    .menu-button
+        display: none
+
+    .menu-button.active
+        display: inherit
+
+        @media screen and (min-width: 768px)
+            display: none
+
+    a.link
+        @include headerButton()
+        
+        margin-right: 16px
+
+        span
+            margin: 0 0 0 0.5rem
+
+    .language-select-button
+        @include headerButton()
+        box-sizing: border-box
+        display: flex
+        flex-direction: row
+
+        span
+            margin: 0 0.5rem
+
+    svg
+        box-sizing: border-box
+        display: block
+        fill: $commonForegroundColor
+        stroke: $commonForegroundColor
+        vertical-align: middle
+
+    .language-select-items
+        background-color: rgb(255, 255, 255, .1)
+        border-radius: 0.25rem
+        display: flex
+        flex-direction: column
+        margin-top: 1.5rem
+        position: absolute
+        right: 0px
+        width: 8rem
+
+        .language-select-item
+            @include  headerButton()
+
+    
+    .mobile-menu-container.active
+        backdrop-filter: blur(12px)
+        border-radius: .25rem
+        
+        div.language-select-button-mobile
+            align-items: center
+            background-color: transparent
+            border: none
+            box-sizing: border-box
+            display: flex
+            flex-direction: row
+            outline: none
+            padding: 0
+
+            span
+                color: white !important
+                display: flex
+                font-family: "JetBrainsMono"
+                font-size: 16px
+                font-weight: bold
+                margin: 0 .5rem
+
+        a
+            align-items: center
+            color: white !important
+            display: flex
+            text-decoration: none
+
+            span
+                font-weight: bold
+                margin: 0 .5rem
+
+        svg
+            fill: white !important
+            stroke: white !important
+    
+
+
+.hello-section
+    background: linear-gradient(180deg, rgb(82, 113, 255, 0.2), transparent)
+
+    .title
+        font-size: 0px
+
+        span
+            font-weight: normal
+            font-size: clamp(16px, 4vw, 55px)
+            line-height: 1.4em
+
+        .title-cursor:
+            z-index: 1
+
+
+    #show-more-link
+        background-color: rgba(255, 255, 255, .1)
+        border-radius: 2rem
+        color: white
+        display: block
+        font-size: 1.125rem
+        margin: 4rem auto 0 auto
+        padding: 1rem 1.5rem
+        text-decoration: none
+        transition-duration: .3s
+        transition-property: background-color transform
+
+        &:hover
+            background-color: rgba(255, 255, 255, .25)
+            transform: translateY(-15%)   
+
+
+
+.why-me-section
+    .title
+        font-size: 0px
+        margin: 3rem 0
+
+        span
+            font-weight: normal
+            font-size: clamp(18px, 4vw, 30px)
+            line-height: 1.4em
+
+    .about-container
+        div.profile-image
+            aspect-ratio: 1 / 1
+            background: url(/images/profile-photo.jpg) 50% 50% no-repeat
+            background-size: cover
+            border-radius: 50%
+            max-width: 450px
+            width: 100%
+
+        .description-container
+            max-width: 600px
+
+            .description-text
+                color: rgba(255, 255, 255, .8)
+                display: block
+                font-size: clamp(14px, 4vw, 18px)
+                line-height: 2rem
+                margin-block: 0
+
+            @media screen and (min-width: 768px)
+                margin: 0 0 3rem 0
+
+                
+            h2
+                font-size: clamp(14px, 4vw, 20px)
+                font-weight: normal
+                margin: 0
+
+                span:first-of-type
+                    display: inline-block
+                    margin-bottom: .5rem
+
+        
+
+
+
+.education-experience-section
+    .title
+        font-size: clamp(18px, 4vw, 30px)
+        line-height: 1.4em
+        
+
+    .education-title, .experience-title
+        font-size: 1.8rem
+        font-weight: normal
+
+    .education-title
+        margin: 0 0 1.25rem 0
+
+    .experience-title
+        margin: calc(2.5rem + .4rem) 0 1.25rem 0     
+
+        @media screen and (min-width: 768px)
+            margin: 0 0 1.25rem 0
+
+    .education-list, .experience-list
+        display: grid
+        gap: 1.25rem 0
+        margin-bottom: auto
+        padding: 0
+
+        .list-item
+            background-color: #aaaaaa1a
+            border-radius: 5px
+            padding: 1rem
+            list-style-type: none
+            transition: .2s
+
+            span.date-container
+                align-items: center
+                display: flex
+                justify-content: space-between
+                margin: 0 0 .5rem 0
+
+            span.date
+                display: inline-block
+                font-size: .875rem
+                font-weight: bold
+                line-height: 1.25rem
+
+            .highlight
+                background: $commonGradient
+                border-radius: calc(.875rem / 3)
+                display: inline-block
+                height: calc(.875rem / 1.5)
+                margin: 0 0 0 auto
+                width: calc(.875rem / 1.5)
+
+            h4.header
+                font-size: 1.125rem
+                font-weight: normal
+                line-height: 1.75rem
+                margin: 0 0 .5rem 0
+
+            p.additional
+                color: #fffc
+                font-size: 1rem
+                line-height: 1.5rem
+                margin: 0
+
+        .list-item.red
+            position: relative
+
+        .list-item.red::before
+            content: ""
+            position: absolute
+            inset: 0
+            border-radius: 5px
+            padding: 1px
+            background: linear-gradient(45deg, rgba(82, 113, 255, .25), rgba(114, 82, 255, .25), rgba(220, 82, 255, .25))
+            mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0)
+            mask-composite: exclude
+
+        .list-item.clickable
+            cursor: pointer
+
+        .list-item.clickable:hover
+            background-color: #aaaaaa3a
+
+
+
+.tools-skills-section
+    .title-container
+        margin: 0 0 4rem 0
+        
+        .title
+            display: inline
+            font-size: 2.25rem
+            line-height: 2.5rem   
+
+    .tools-subtitle
+        @include toolsSkillsSubtitle
+        margin: 0 0 2rem 0
+
+    .skills-subtitle
+        @include toolsSkillsSubtitle
+        margin: 0
+
+    .tools-item
+        align-items: center
+        background-color: rgba(31, 41, 55, .5)
+        border-radius: .5rem
+        display: flex
+        flex-direction: column
+        padding: 1.5rem
+
+        .tools-item-icon
+            aspect-ratio: 1 / 1
+            background-size: cover
+            height: 2.5rem
+            line-height: 1
+            margin-bottom: 1.25rem
+
+        .tools-item-label
+            display: inline-block
+            text-align: center
+            width: 100%
+
+
+    .skills-tabs-buttons
+        button.skills-tabs-button
+            background: rgba(255, 255, 255, 0.2)
+            border: none
+            border-radius: 3.4rem
+            box-sizing: border-box
+            color: rgba(255, 255, 255, 0.2)
+            cursor: pointer
+            outline: none
+            transition: .3s
+
+            h3
+                font-family: 'JetBrainsMono'
+                font-size: 1rem
+                margin: 0
+                line-height: 1.5
+                padding: .5rem 1rem
+                transition: 0.3s
+
+        button.skills-tabs-button:hover, button.skills-tabs-button.active
+            background: $commonGradient !important
+
+            @media screen and (min-width: 1024px)
+                transform: scale(1.05)
+
+            h3
+                color: white
+                -webkit-text-fill-color: white
+
+
+    .skills-tabs-items
+        .skills-tabs-item
+            background-color: rgb(31, 41, 55, .5)
+            border-radius: .5rem
+            display: flex
+            flex-direction: column
+            padding: 1.25rem
+
+            .label-container
+                align-items: center
+                display: flex
+                flex-direction: row
+                margin-bottom: .75rem
+
+                div.icon
+                    aspect-ratio: 1 / 1
+                    box-sizing: border-box
+                    height: 1.5rem
+                    margin-right: .75rem
+                    background-size: cover
+                    margin: .5rem 1em .5rem 0
+
+                span.label
+                    font-size: 1.125rem
+                    line-height: 1.75rem
+
+            .progress-bar-outer
+                background-color: rgb(55, 65, 81)
+                border-radius: calc(.75rem / 2)
+                height: .75rem
+                margin-bottom: .25rem
+
+                .progress-bar-inner
+                    background: $commonGradient
+                    border-radius: calc(.75rem / 2)
+                    box-shadow: 0 4px 15px #7252ff
+                    height: 100%
+                    transition-duration: .5s
+                    transition-property: width
+
+            .progress-text-container
+                display: flex
+                flex-direction: row-reverse
+
+                .progress-text
+                    font-size: .875rem
+                    line-height: 1.25rem
+
+
+
+.footer-section
+    #footer-rights
+        color: rgb(156, 163, 175)
+        text-align: center
+
+    .social-links
+        display: flex
+        flex-direction: row
+        gap: 1.5rem
+        height: 1.875rem
+        justify-content: center
+        margin: 0 auto 1.5rem auto
+
+        .social-link
+            display: grid
+            grid-template-areas: A
+            transition: 5s
+
+            .social-icon-background
+                background: white
+                grid-area: A
+                height: 1.875rem
+                left: 0
+                top: 0
+                width: 1.875rem
+
+            svg
+                fill: #0a0a0a
+                grid-area: A
+                height: 1.875rem
+                left: 0
+                top: 0
+                width: 1.875rem
+
+        .social-link:hover
+            .social-icon-background
+                background: $commonGradient

@@ -1,0 +1,99 @@
+{
+  "header": {
+    "name": "Виктор Куликов",
+    "homeButton": "Главная",
+    "languageSelectButton": "Язык",
+    "aboutMeButton": "Обо мне"
+  },  
+  "hello": {
+    "title": {
+      "hello": "Привет! ",
+      "helloName": "Меня зовут Виктор",
+      "occupationPrefix": "Я — ",
+      "occupations": [
+        "Программист C# & TypeScript",
+        "Fullstack-разработчик",
+        "Разработчик ASP.NET Core"
+      ],
+      "additional": "Готов к выполнению ",
+      "additionalHighlighted": "сложных задач"
+    },
+    "showMoreButton": "Смотреть далее"
+  },
+  "whyMe": {
+    "title": {
+      "common": "Почему стоит нанять меня на ",
+      "project": "Ваш проект"
+    },
+    "experience": {
+      "years": {
+        "startDate": "2021-01-01",
+        "getYearsWord": {
+          "arguments": "years",
+          "body": "const d = years % 10; if (years >= 10 && years <= 19 || d >= 5 && d <= 9 || d === 0) return 'лет'; else if (d === 1) return 'год'; else return 'года';"
+        },
+        "label": "Коммерческого опыта"
+      },
+      "education": {
+        "info": "Высшее ИТ",
+        "label": "Образование (бакалавр)"
+      }
+    }
+  },
+  "educationExperience": {
+    "title": "Мой профессиональный путь",
+    "education": {
+      "title": "Образование",
+      "items": [
+        {
+          "date": "Москва, 2019-2023",
+          "header": "Информатика и вычислительная техника",
+          "additional": "РТУ «МИРЭА» (бакалавриат)",
+          "isRed": false
+        },
+        {
+          "date": "Москва, '23",
+          "header": "Фронтенд разработка ИТ‑приложений",
+          "additional": "РТУ «МИРЭА» (переподготовка)",
+          "isRed": true
+        }
+      ]
+    },
+    "experience": {
+      "title": "Опыт работы",
+      "items": [
+        {
+          "date": "Январь 2021 - Февраль 2022",
+          "header": "Fullstack веб-разработчик",
+          "additional": "Запуск в области строительства"
+        },
+        {
+          "date": "Март 2022 - Июль 2023",
+          "header": "Fullstack веб-разработчик",
+          "additional": "Запуск в области перевозок"
+        },
+        {
+          "date": "Июль 2023 - н.в.",
+          "header": "Backend-разработчик",
+          "additional": "Хилби"
+        }
+      ]
+    }
+  },
+  "toolsSkills": {
+    "title": {
+      "tools": "Инструменты",
+      "skills": "нывыки"
+    },
+    "skills": {
+      "tabButtons": [
+        { "name": "Frontend" },
+        { "name": "Backend" },
+        { "name": "Базы данных" }
+      ]
+    }
+  },
+  "footer": {
+    "rights": "Виктор Куликов. Все права защищены."
+  }
+}

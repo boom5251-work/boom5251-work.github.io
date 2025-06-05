@@ -1,0 +1,100 @@
+{
+  "header": {
+    "name": "Victor Kulikov",
+    "homeButton": "Home",
+    "aboutMeButton": "About",
+    "languageSelectButton": "Language"
+  },  
+  "hello": {
+    "title": {
+      "hello": "Hello! ",
+      "helloName": "I'm Victor",
+      "occupationPrefix": "I'm a ",
+      "occupations": [
+        "C# & TypeScript programmer",
+        "Fullstack-developer",
+        "ASP.NET Core developer"
+      ],
+      "additional": "Ready to perform ",
+      "additionalHighlighted": "difficult tasks"      
+    },
+    "showMoreButton": "Show more"
+  },
+  "whyMe": {
+    "title": {
+      "common": "Why should you hire me for ",
+      "project": "your project"
+    },
+    "experience": {
+      "years": {
+        "startDate": "2021-01-01",
+        "getYearsWord": {
+          "arguments": "years",
+          "body": "return years === 1 ? 'year' : 'years'"
+        },
+        "label": "Of commercial experience"
+      },
+      "education": {
+        "info": "Higher IT",
+        "label": "Education (bachelor)"
+      }
+    }
+  },
+  "educationExperience": {
+    "title": "My professional route",
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "date": "Moscow, 2019-2023",
+          "header": "Computer Science and Engineering",
+          "additional": "RTU «MIREA» (bachelor course)",
+          "isRed": false
+        },
+        {
+          "date": "Moscow, '23",
+          "header": "Frontend application development",
+          "additional": "RTU «MIREA» (refresher course)",
+          "isRed": true
+        }
+      ]
+    },
+    "experience": {
+      "title": "Job experience",
+      "items": [
+        {
+          "date": "January 2021 - February 2022",
+          "header": "Fullstack web developer",
+          "additional": "A startup in the field of construction"
+        },
+        {
+          "date": "March 2022 - July 2023",
+          "header": "Fullstack web developer",
+          "additional": "A startup in the field of logistics"
+        },
+        {
+          "date": "July 2023 - now",
+          "header": "Backend developer",
+          "additional": "Healbe"
+        }
+      ]
+    }
+  },
+  "toolsSkills": {
+    "title": {
+      "tools": "Tools",
+      "and": " and ",
+      "skills": "skills"
+    },
+    "skills": {
+      "tabButtons": [
+        { "name": "Frontend" },
+        { "name": "Backend" },
+        { "name": "Databases" }
+      ]
+    }
+  },
+  "footer": {
+    "rights": "Victor Kulikov. All rights reserved."
+  }
+}
