@@ -4,7 +4,7 @@ const languages = [
   { code: 'sr', code4: 'sr-SR', name: 'Srbski' }
 ]
 
-var currentLanguage = null
+var currentLanguage = cookie.get('currentLanguage') ?? null
 
 
 $(window).on('load', function () {
@@ -46,6 +46,7 @@ function loadLanguageData (selectedLanguage) {
   fetch(`/lang/${selectedLanguage}.json`)
     .then(res => res.json())
     .then((data) => {
+      cookie.set('currentLanguage', selectedLanguage);
       currentLanguage = selectedLanguage
       pageData = data
 

@@ -4,7 +4,7 @@ var pageData = null
 $(window).on('load', function () {
   const userLanguage = navigator.language || navigator.userLanguage;
   const language = languages.find(lang => lang.code === userLanguage || lang.code4 === userLanguage)
-  currentLanguage = language.code ?? 'en'
+  currentLanguage ??= language.code ?? 'en'
 
   fetch(`/lang/${currentLanguage}.json`)
     .then(res => res.json())
@@ -98,7 +98,7 @@ function setEducationExperienseText () {
 
 function setToolsAndSkillsText () {
   const titleData = pageData.toolsSkills.title
-  $('#tools-skills-title').text(`${titleData.tools} и ${titleData.skills}`)
+  $('#tools-skills-title').text(`${titleData.tools} ${titleData.and} ${titleData.skills}`)
   $('#title-skills').text(titleData.skills)
   $('#tools-subtitle').text(titleData.tools)
 
