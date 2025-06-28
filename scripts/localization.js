@@ -47,6 +47,7 @@ function setHelloText () {
 function setWhyMeText () {
   $('#why-me-title').text(pageData.whyMe.title.common)
   $('#why-me-title-highlighted').text(pageData.whyMe.title.project)
+  $('#why-me-description-text').text(pageData.whyMe.description)
 
   const startDate = new Date(pageData.whyMe.experience.years.startDate)
   const years = new Date().getFullYear() - startDate.getFullYear()

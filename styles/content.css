@@ -279,7 +279,7 @@
 .education-experience-section .education-list .list-item .highlight, .education-experience-section .experience-list .list-item .highlight {
   background: linear-gradient(45deg, rgb(82, 113, 255), rgb(114, 82, 255), rgb(220, 82, 255));
   border-radius: 0.2916666667rem;
-  display: inline-block;
+  display: none;
   height: 0.5833333333rem;
   margin: 0 0 0 auto;
   width: 0.5833333333rem;
@@ -310,12 +310,6 @@
           mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
-}
-.education-experience-section .education-list .list-item.clickable, .education-experience-section .experience-list .list-item.clickable {
-  cursor: pointer;
-}
-.education-experience-section .education-list .list-item.clickable:hover, .education-experience-section .experience-list .list-item.clickable:hover {
-  background-color: rgba(170, 170, 170, 0.2274509804);
 }
 
 .tools-skills-section .title-container {

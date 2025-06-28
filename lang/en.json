@@ -22,9 +22,10 @@
   },
   "whyMe": {
     "title": {
-      "common": "Why should you hire me for ",
+      "common": "Why should you hire me for ",
       "project": "your project"
     },
+    "description": "I'm a qualified fullstack developer who appreciates clean code, fault tolerance, and thoughtful architecture. My projects ain't just running programs, but stable, scalable, and easily supported solutions. I'm responsible and a perfectionist. I like to solve complex problems, the answer to which doesn't lie on the surface.",
     "experience": {
       "years": {
         "startDate": "2021-01-01",

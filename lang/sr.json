@@ -22,9 +22,10 @@
   },
   "whyMe": {
     "title": {
-      "common": "Zašto me vredi zaposliti za ",
+      "common": "Zašto me vredi zaposliti za ",
       "project": "vaš projekat"
     },
+    "description": "Ja sam kvalifikovani fullstack programer koji ceni čisti kod, održivost i promišljenu arhitekturu. Moji projekti nisu samo radni programi, već stabilna, masshatbable i lako podržana rešenja. Ja sam odgovoran, perfekcionista. Volim da rešavam teške zadatke, na koje rešenje nije očigledno.",
     "experience": {
       "years": {
         "startDate": "2021-01-01",
