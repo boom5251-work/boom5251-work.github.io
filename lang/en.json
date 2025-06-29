@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "title": "Victor Kulikov — Fullstack-developer",
+    "author": "Victor Kulikov",
+    "description": "Victor Kulikov is a qualified fullstack developer (ASP.NET , Angular, Vue.js). Hire a C# and TypeScript developer.",
+    "keywords": "Victor Kulikov, developer, programmer, C#, TypeScript, ASP.NET, Angular, Vue.js, backend, frontend",
+    "robots": "index, follow"
+  },
   "header": {
     "name": "Victor Kulikov",
     "homeButton": "Home",

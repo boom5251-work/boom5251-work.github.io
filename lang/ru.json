@@ -1,4 +1,11 @@
 {
+  "meta": {
+    "title": "Виктор Куликов — Fullstack-разработчик",
+    "author": "Виктор Куликов",
+    "description": "Виктор Куликов — квалифицированный fullstack-разработчик (ASP.NET, Angular, Vue.js). Найти разработчика C#, TypeScript.",
+    "keywords": "Виктор Куликов, разработчик, программист, C#, TypeScript, ASP.NET, Angular, Vue.js, backend, frontend",
+    "robots": "index, follow"
+  },
   "header": {
     "name": "Виктор Куликов",
     "homeButton": "Главная",

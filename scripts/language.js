@@ -4,7 +4,11 @@ const languages = [
   { code: 'sr', code4: 'sr-SR', name: 'Srbski' }
 ]
 
-var currentLanguage = cookie.get('currentLanguage') ?? null
+const languageFromQuery = new URLSearchParams(location.search).get('lang')
+
+var currentLanguage = languages.map(({ code }) => code).includes(languageFromQuery) 
+  ? languageFromQuery
+  : cookie.get('currentLanguage') ?? null
 
 
 $(window).on('load', function () {
@@ -55,6 +59,7 @@ function loadLanguageData (selectedLanguage) {
       occupationCounter = 0
 
       closeLanguageSelect()
+      changeMetadata()
       setLocalText()
     })
 }

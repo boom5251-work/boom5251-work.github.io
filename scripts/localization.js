@@ -10,9 +10,40 @@ $(window).on('load', function () {
     .then(res => res.json())
     .then((data) => {
       pageData = data
+      changeMetadata()
       setLocalText()
     })
 })
+
+
+function changeMetadata() {
+  history.replaceState(null, '', location.origin + location.pathname)
+
+  $('html').attr('lang', currentLanguage)
+  $('html').attr('xml:lang', currentLanguage)
+
+  $('meta[name="og:title"], meta[name="og:description"]').remove()
+  $('head').prepend(`<meta name="og:description" content="${pageData.meta.description}">`)
+  $('head').prepend(`<meta name="og:title" content="${pageData.meta.title}">`)
+
+  $('meta[name="description"], meta[name="keywords"], meta[name="robots"]').remove()
+  $('head').prepend(`<meta name="robots" content="${pageData.meta.robots}">`)
+  $('head').prepend(`<meta name="keywords" content="${pageData.meta.keywords}">`)
+  $('head').prepend(`<meta name="description" content="${pageData.meta.description}">`)
+
+  $('meta[name="author"], meta[http-equiv="Content-Language"]').remove()
+  $('head').prepend(`<meta name="author" content="${pageData.meta.author}">`)
+  $('head').prepend(`<meta http-equiv="Content-Language" content="${currentLanguage}">`)
+
+  $('head').children('title').remove()
+  $('head').prepend(`<title>${pageData.meta.title}</title>`)
+
+  $('link[rel="alternate"]').remove()
+  languages.filter(language => language.code !== currentLanguage).reverse().forEach((language) => {
+    const currentLocation = location.origin + location.pathname
+    $('meta').last().after(`<link rel="alternate" href="${currentLocation}?lang=${language.code}" hreflang="${language.code}" />`)
+  })
+}
 
 
 function setLocalText () {
