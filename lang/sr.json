@@ -1,10 +1,6 @@
 {
   "meta": {
-    "title": "Viktor Kuljikov — Fullstack programer",
-    "author": "Viktor Kuljikov",
-    "description": "Viktor Kuljikov - kvalifikovani fullstack programer (ASP.NET, Angular, Vue.js). Pronađite programera C#, TypeScript.",
-    "keywords": "Viktor Kuljikov, programer, razvijač,  C#, TypeScript, ASP.NET, Angular, Vue.js, backend, frontend",
-    "robots": "index, follow"
+    "title": "Viktor Kuljikov — Fullstack programer"
   },
   "header": {
     "name": "Viktor Kuljikov",
