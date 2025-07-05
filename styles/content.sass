@@ -433,25 +433,14 @@ $commonGradient: linear-gradient(45deg, rgb(82, 113, 255), rgb(114, 82, 255), rg
 
         .social-link
             display: grid
-            grid-template-areas: A
             transition: 5s
 
-            .social-icon-background
-                background: white
-                grid-area: A
-                height: 1.875rem
-                left: 0
-                top: 0
-                width: 1.875rem
-
             svg
-                fill: #0a0a0a
-                grid-area: A
                 height: 1.875rem
                 left: 0
                 top: 0
                 width: 1.875rem
 
-        .social-link:hover
-            .social-icon-background
-                background: $commonGradient
+            svg:hover
+                path
+                    fill: url('#hover-gradient')
