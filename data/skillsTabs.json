@@ -79,6 +79,11 @@
         "name": "IIS",
         "icon": "iis.svg",
         "level": 70
+      },
+      {
+        "name": "NuGet",
+        "icon": "nuget.svg",
+        "level": 90
       }
     ]
   },
