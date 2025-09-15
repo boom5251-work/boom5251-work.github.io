@@ -1,6 +1,6 @@
 $(window).on('load', function () {
   $('#title-occupation').text('')
-  $('#title-cursor').text('|')
+  $('.title-cursor').text('|')
   startWriting()
 })
 
