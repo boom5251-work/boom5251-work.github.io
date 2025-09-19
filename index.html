@@ -3,8 +3,8 @@
 <head>
   <title>Виктор Куликов — Fullstack-разработчик</title>
   <meta name="og:title" content="Виктор Куликов — Fullstack-разработчик">
-  <meta name="description" content="Виктор Куликов — квалифицированный fullstack-разработчик (ASP.NET, Angular, Vue.js). Найти разработчика C#, TypeScript.">
-  <meta name="og:description" content="Виктор Куликов — квалифицированный fullstack-разработчик (ASP.NET, Angular, Vue.js). Найти разработчика C#, TypeScript.">
+  <meta name="description" property="og:description" content="Виктор Куликов — квалифицированный fullstack-разработчик (ASP.NET, Angular, Vue.js). Найти разработчика C#, TypeScript.">
+  <meta property="og:image" content="https://kulikov-asp.net/images/preview.png"/>
   <meta name="keywords" content="Виктор Куликов, разработчик, программист, C#, TypeScript, ASP.NET, Angular, Vue.js, backend, frontend">
   <meta name="author" content="Виктор Куликов">
   <meta name="robots" content="index, follow">
@@ -165,14 +165,12 @@
       <div class="container">
         <div class="centered-content">
           <h2 class="title">
-            <span id="title-hello" class="title-hello highlighted">Привет!</span>
+            <span id="title-hello" class="title-hello highlighted">Привет! </span>
             <span id="title-hello-name" class="title-hello">Меня зовут Виктор</span>
             <br>
             <span id="title-occupation-prefix">Я — </span>
-            <span id="title-occupation" class="highlighted" aria-live="polite">
-              Программист C# & TypeScript
-              Fullstack-разработчик
-              Разработчик ASP.NET Core
+            <span id="title-occupation" class="highlighted" style="display: none;" aria-live="polite">
+              Программист C# & TypeScript. Fullstack-разработчик. Разработчик ASP.NET Core.
             </span>
             <span class="title-cursor"></span>
             <br>
@@ -185,41 +183,43 @@
         </div>
       </div>
     </section>
-    <section class="why-me-section" id="about">
-      <div class="container">
-        <h3 class="title">
-          <span id="why-me-title">Почему стоит нанять меня на </span>
-          <span id="why-me-title-highlighted" class="highlighted">Ваш проект</span>
-          <span>?</span>
-        </h3>
-        <div class="about-container">
-          <div class="profile-image"></div>
-          <div class="description-container">
-            <p class="description-text" id="why-me-description-text">
-              Я — квалифицированный fullstack-разработчик, который ценит чистый код, отказоусточивость и продуманную архитектуру.
-              Мои проекты — это не просто работающие программы, а стабильные, масшатбируемые и легко поддерживаемые решения.
-              Я — ответственный, перфекционист. Люблю решать сложные задачи, ответ к которым не лежит на поверхности.
-            </p>
-            <div class="experience-container">
-              <div class="experience-item">
-                <h2>
-                  <span id="experience-item-years"></span>
-                  <br>
-                  <span id="experience-item-years-highlighted" class="highlighted"></span>
-                </h2>
+    <main>
+      <section class="why-me-section" id="about">
+        <div class="container">
+          <h3 class="title">
+            <span id="why-me-title">Почему стоит нанять меня на </span>
+            <span id="why-me-title-highlighted" class="highlighted">Ваш проект</span>
+            <span>?</span>
+          </h3>
+          <div class="about-container">
+            <div class="profile-image"></div>
+            <article class="description-container">
+              <p class="description-text" id="why-me-description-text">
+                Я — квалифицированный fullstack-разработчик, который ценит чистый код, отказоусточивость и продуманную архитектуру.
+                Мои проекты — это не просто работающие программы, а стабильные, масшатбируемые и легко поддерживаемые решения.
+                Я — ответственный, перфекционист. Люблю решать сложные задачи, ответ к которым не лежит на поверхности.
+              </p>
+              <div class="experience-container">
+                <div class="experience-item">
+                  <h2>
+                    <span id="experience-item-years"></span>
+                    <br>
+                    <span id="experience-item-years-highlighted" class="highlighted"></span>
+                  </h2>
+                </div>
+                <div class="experience-item">
+                  <h2>
+                    <span id="experience-item-education"></span>
+                    <br>
+                    <span id="experience-item-education-highlighted" class="highlighted"></span>
+                  </h2>
+                </div>
               </div>
-              <div class="experience-item">
-                <h2>
-                  <span id="experience-item-education"></span>
-                  <br>
-                  <span id="experience-item-education-highlighted" class="highlighted"></span>
-                </h2>
-              </div>
-            </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <section class="education-experience-section">
       <div class="container">
         <h3 class="title">
@@ -322,18 +322,6 @@
               </defs>
             </svg>
           </a>
-          <a class="social-link" href="https://ru.pinterest.com/boom5251/" target="_blank">
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_2601_21)">
-                <path d="M31.9975 0C14.3255 0 0 14.326 0 31.9988C0 45.538 8.42145 57.0868 20.2994 61.7622C20.2469 60.6683 20.2544 55.0063 24.1954 38.1003C24.7224 32.4608 23.9906 30.4603 23.9906 28.1175C23.9906 22.8002 26.7528 21.6788 28.3662 21.6788C30.6664 21.6788 33.8431 22.558 33.8431 26.2644C33.8431 30.5102 30.3816 31.6266 30.3816 31.6266C30.3816 31.6266 30.1319 32.7131 29.8447 35.7301C29.5575 38.7522 30.7663 42.024 35.6962 42.024C43.6007 42.024 44.8195 31.0522 44.8195 28.0326C44.8195 23.8617 41.7626 15.395 32.2722 15.395C19.6151 15.395 17.4373 26.7339 17.4373 29.7584C17.4373 31.0522 17.7944 33.3349 18.0392 34.3115C20.4293 34.6986 20.182 37.9704 19.1605 38.8995C18.0242 39.921 12.1851 41.1373 12.1851 28.3198C12.1851 16.1143 23.0641 9.8254 32.6119 9.8254C41.7001 9.8254 51.6001 16.0968 51.6001 28.1775C51.6001 38.9619 43.848 47.4537 35.7062 47.4537C30.8162 47.4537 28.2238 43.4251 28.2238 43.4251C28.2238 47.1964 21.2984 60.1563 20.4118 61.8021C24.0081 63.2033 27.9067 64 32 64C49.6721 64 64 49.674 64 31.9988C64 14.3235 49.6696 0 31.9975 0Z" fill="white"/>
-              </g>
-              <defs>
-                <clipPath id="clip0_2601_21">
-                  <rect width="64" height="64" fill="white"/>
-                </clipPath>
-              </defs>
-            </svg>
-          </a>
           <a class="social-link" href="https://t.me/boom5251" target="_blank">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2601_26)">
@@ -346,13 +334,37 @@
               </defs>
             </svg>
           </a>
-          <a class="social-link" href="mailto:boom5251@inbox.ru">
+          <a class="social-link" href="mailto:boom5251@vk.com">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_2601_34)">
                 <path d="M32 0C49.6731 0 64 14.3269 64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C5.15411e-07 14.3269 14.3269 5.15443e-07 32 0ZM32 13.333C21.7072 13.333 13.333 21.6835 13.333 31.9473C13.3331 42.2109 21.7073 50.5605 32 50.5605C35.7708 50.5605 39.4062 49.4411 42.5137 47.3232L42.5684 47.2871L40.0537 44.3711L40.0107 44.3984C37.6184 45.9331 34.8482 46.7451 32 46.7451C23.8175 46.7451 17.1603 40.1065 17.1602 31.9473C17.1602 23.7878 23.8175 17.1494 32 17.1494C40.1824 17.1496 46.8389 23.7879 46.8389 31.9473C46.8389 33.0044 46.7218 34.0749 46.4902 35.1279C46.0206 37.0482 44.6721 37.6366 43.6592 37.5586C42.6411 37.4767 41.4493 36.7531 41.4414 34.9824V31.9473C41.4414 26.7558 37.2061 22.5324 32 22.5322C26.7937 22.5322 22.5576 26.7557 22.5576 31.9473C22.5577 37.1388 26.7938 41.3623 32 41.3623C34.5287 41.3622 36.9014 40.3759 38.6895 38.583C39.7292 40.1964 41.4243 41.2089 43.3525 41.3633C43.5179 41.3765 43.6868 41.3828 43.8545 41.3828C45.2124 41.3828 46.5584 40.93 47.6436 40.1084C48.7625 39.2615 49.5973 38.0357 50.0586 36.5645C50.1331 36.3268 50.2688 35.7832 50.2695 35.7793L50.2734 35.7598C50.5453 34.5784 50.666 33.4012 50.666 31.9473C50.666 21.6836 42.2927 13.3332 32 13.333ZM32 26.3486C35.0959 26.3488 37.6143 28.86 37.6143 31.9473C37.6142 35.0344 35.0958 37.5458 32 37.5459C28.9039 37.5459 26.3849 35.0345 26.3848 31.9473C26.3848 28.8599 28.9039 26.3486 32 26.3486Z" fill="white"/>
               </g>
               <defs>
                 <clipPath id="clip0_2601_34">
+                  <rect width="64" height="64" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="social-link" href="https://ru.pinterest.com/boom5251/" target="_blank">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2601_21)">
+                <path d="M31.9975 0C14.3255 0 0 14.326 0 31.9988C0 45.538 8.42145 57.0868 20.2994 61.7622C20.2469 60.6683 20.2544 55.0063 24.1954 38.1003C24.7224 32.4608 23.9906 30.4603 23.9906 28.1175C23.9906 22.8002 26.7528 21.6788 28.3662 21.6788C30.6664 21.6788 33.8431 22.558 33.8431 26.2644C33.8431 30.5102 30.3816 31.6266 30.3816 31.6266C30.3816 31.6266 30.1319 32.7131 29.8447 35.7301C29.5575 38.7522 30.7663 42.024 35.6962 42.024C43.6007 42.024 44.8195 31.0522 44.8195 28.0326C44.8195 23.8617 41.7626 15.395 32.2722 15.395C19.6151 15.395 17.4373 26.7339 17.4373 29.7584C17.4373 31.0522 17.7944 33.3349 18.0392 34.3115C20.4293 34.6986 20.182 37.9704 19.1605 38.8995C18.0242 39.921 12.1851 41.1373 12.1851 28.3198C12.1851 16.1143 23.0641 9.8254 32.6119 9.8254C41.7001 9.8254 51.6001 16.0968 51.6001 28.1775C51.6001 38.9619 43.848 47.4537 35.7062 47.4537C30.8162 47.4537 28.2238 43.4251 28.2238 43.4251C28.2238 47.1964 21.2984 60.1563 20.4118 61.8021C24.0081 63.2033 27.9067 64 32 64C49.6721 64 64 49.674 64 31.9988C64 14.3235 49.6696 0 31.9975 0Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_2601_21">
+                  <rect width="64" height="64" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/boom5251/" target="_blank">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_672_151)">
+                <path d="M56.381 0H7.61905C3.41333 0 0 3.41333 0 7.61905V56.381C0 60.5867 3.41333 64 7.61905 64H56.381C60.5867 64 64 60.5867 64 56.381V7.61905C64 3.41333 60.5867 0 56.381 0ZM19.8095 24.381V53.3333H10.6667V24.381H19.8095ZM10.6667 15.9543C10.6667 13.821 12.4952 12.1905 15.2381 12.1905C17.981 12.1905 19.7029 13.821 19.8095 15.9543C19.8095 18.0876 18.1029 19.8095 15.2381 19.8095C12.4952 19.8095 10.6667 18.0876 10.6667 15.9543ZM53.3333 53.3333H44.1905C44.1905 53.3333 44.1905 39.2229 44.1905 38.0952C44.1905 35.0476 42.6667 32 38.8571 31.939H38.7352C35.0476 31.939 33.5238 35.0781 33.5238 38.0952C33.5238 39.4819 33.5238 53.3333 33.5238 53.3333H24.381V24.381H33.5238V28.2819C33.5238 28.2819 36.4648 24.381 42.3771 24.381C48.4267 24.381 53.3333 28.541 53.3333 36.9676V53.3333Z" fill="white"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_672_151">
                   <rect width="64" height="64" fill="white"/>
                 </clipPath>
               </defs>
