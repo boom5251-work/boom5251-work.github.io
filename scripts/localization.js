@@ -33,6 +33,7 @@ function setLocalText () {
   setWhyMeText()
   setEducationExperienseText()
   setToolsAndSkillsText()
+  setPortfolioText()
   setFooterText()
 }
 
@@ -41,6 +42,7 @@ function setHeaderText () {
   $('#header-name').text(pageData.header.name)
   $('.home-button').children('span').text(pageData.header.homeButton)
   $('.about-button').children('span').text(pageData.header.aboutMeButton)
+  $('.portfolio-button').children('span').text(pageData.header.portfolioButton)
   $('.language-select-button').children('span').text(pageData.header.languageSelectButton)
   $('.language-select-button-mobile').children('span').text(pageData.header.languageSelectButton)
 }
@@ -119,6 +121,24 @@ function setToolsAndSkillsText () {
   $('#skills-subtitle').text(skillsSubtitle.charAt(0).toUpperCase() + skillsSubtitle.slice(1))
 
   addTabsButtons()
+}
+
+
+function setPortfolioText () {
+  $('#portfolio-title').text(pageData.portfolio.title)
+
+  $('.portfolio-projects-container').empty()
+
+  pageData.portfolio.projects.forEach((project) => {
+    const projectBlock = `<div class="portfolio-project" onclick="showProjectDescription('${project.id}')">
+      <img src="/images/projects/${project.thumbnailFileName}" alt="${project.title}" class="portfolio-project-image">
+      <div class="portfolio-project-additional">
+        <h3 class="subtitle highlighted">${project.title}</h3>
+      </div>
+    </div>`
+
+    $('.portfolio-projects-container').append(projectBlock)
+  })
 }
 
 

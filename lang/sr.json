@@ -6,8 +6,9 @@
     "name": "Viktor Kuljikov",
     "homeButton": "Naslovna",
     "aboutMeButton": "O meni",
+    "portfolioButton": "Portfolio",
     "languageSelectButton": "Jezik"
-  },  
+  },
   "hello": {
     "title": {
       "hello": "Zdravo! ",
@@ -52,14 +53,20 @@
         {
           "date": "Moskva, 2019-2023",
           "header": "Informatika i računarstvo",
-          "additional": "RTU «MIREA» (bakalavriat)",
+          "additional": "Ruski tehnološki univerzitet (bakalavriat)",
           "isRed": false
         },
         {
           "date": "Moskva, '23",
           "header": "Frontend razvoj IT aplikacija",
-          "additional": "RTU «MIREA» (prekvalifikacija)",
+          "additional": "Ruski tehnološki univerzitet (prekvalifikacija)",
           "isRed": true
+        },
+        {
+          "date": "Moskva, 2025-2028",
+          "header": "Državna i opštinska uprava",
+          "additional": "Predsednička akademija (magistratura)",
+          "isRed": null
         }
       ]
     },
@@ -97,6 +104,32 @@
         { "name": "Baze podataka" }
       ]
     }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "projects": [
+      {
+        "id": "weather-forecast",
+        "title": "Vremenska prognoza",
+        "description": "Veb aplikacija sa trenutnom vremenskom prognozom. Ovo je nova verzija mog univerzitetskog projekta. Koristi više spoljnih API-ja koji vam omogućavaju da prikažete vremenske podatke bilo gde u svetu.",
+        "thumbnailFileName": "weather-forecast-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "Blazor", "CSS", "Reg.ru oblak"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/WeatherForecast"
+          },
+          {
+            "type": "demo",
+            "icon": "bx-globe-europe",
+            "text": "Demo",
+            "url": "https://weather.kulikov-asp.net"
+          }
+        ]
+      }
+    ]
   },
   "footer": {
     "rights": "Viktor Kuljikov. Sva prava zadržana."

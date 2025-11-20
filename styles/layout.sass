@@ -11,6 +11,11 @@ html, body
     padding: 0
     scroll-behavior: smooth
 
+button
+    color: white
+    font-family: "JetBrainsMono"
+    font-size: 1rem
+
 
 div.container
     margin: 0 auto
@@ -142,7 +147,7 @@ div.container
 .tools-skills-section
     margin-bottom: 6rem
 
-    .tools, .skills
+    .tools
         margin-bottom: 4rem
 
     .tools-container
@@ -205,3 +210,17 @@ div.container
             grid-template-columns: repeat(3, 1fr)
 
         
+
+.portfolio-section
+    margin-bottom: 6rem
+
+    .portfolio-projects-container
+        display: grid
+        gap: 2rem
+        grid-template-columns: 1fr
+
+        @media screen and (min-width: 768px)
+            grid-template-columns: repeat(2, 1fr)
+
+        @media screen and (min-width: 1024px)
+            grid-template-columns: repeat(2, 1fr)

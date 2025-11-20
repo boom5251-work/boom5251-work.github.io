@@ -5,9 +5,10 @@
   "header": {
     "name": "Виктор Куликов",
     "homeButton": "Главная",
-    "languageSelectButton": "Язык",
-    "aboutMeButton": "Обо мне"
-  },  
+    "aboutMeButton": "Обо мне",
+    "portfolioButton": "Портфолио",
+    "languageSelectButton": "Язык"
+  },
   "hello": {
     "title": {
       "hello": "Привет! ",
@@ -60,6 +61,12 @@
           "header": "Фронтенд разработка ИТ‑приложений",
           "additional": "РТУ «МИРЭА» (переподготовка)",
           "isRed": true
+        },
+        {
+          "date": "Москва, 2025-2028",
+          "header": "Государственное и муниципальное управление",
+          "additional": "РАНХиГС (магистратура)",
+          "isRed": null
         }
       ]
     },
@@ -97,6 +104,32 @@
         { "name": "Базы данных" }
       ]
     }
+  },
+  "portfolio": {
+    "title": "Портфолио",
+    "projects": [
+      {
+        "id": "weather-forecast",
+        "title": "Прогноз погоды",
+        "description": "Веб-приложение с актуальным прогнозом погоды — новая версия моего университетского проекта. В нем используется несколько внешних API, что позволяет отображать данные погоды для любой точки мира.",
+        "thumbnailFileName": "weather-forecast-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "Blazor", "CSS", "Рег.Облако"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/WeatherForecast"
+          },
+          {
+            "type": "demo",
+            "icon": "bx-globe-europe",
+            "text": "Демо",
+            "url": "https://weather.kulikov-asp.net"
+          }
+        ]
+      }
+    ]
   },
   "footer": {
     "rights": "Виктор Куликов. Все права защищены."

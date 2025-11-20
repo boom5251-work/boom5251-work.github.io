@@ -6,8 +6,9 @@
     "name": "Victor Kulikov",
     "homeButton": "Home",
     "aboutMeButton": "About",
+    "portfolioButton": "Portfolio",
     "languageSelectButton": "Language"
-  },  
+  },
   "hello": {
     "title": {
       "hello": "Hello! ",
@@ -52,14 +53,20 @@
         {
           "date": "Moscow, 2019-2023",
           "header": "Computer Science and Engineering",
-          "additional": "RTU «MIREA» (bachelor course)",
+          "additional": "Russian University of Technology (bachelor course)",
           "isRed": false
         },
         {
           "date": "Moscow, '23",
           "header": "Frontend application development",
-          "additional": "RTU «MIREA» (refresher course)",
+          "additional": "Russian University of Technology (refresher course)",
           "isRed": true
+        },
+        {
+          "date": "Moscow, 2025-2028",
+          "header": "Public administration",
+          "additional": "President's Academy (magistracy)",
+          "isRed": null
         }
       ]
     },
@@ -97,6 +104,32 @@
         { "name": "Databases" }
       ]
     }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "projects": [
+      {
+        "id": "weather-forecast",
+        "title": "Weather forecast",
+        "description": "A web app with an up-to-date weather forecast. This is a new version of my university project. It uses several external APIs, which allows you to display weather data for anywhere in the world.",
+        "thumbnailFileName": "weather-forecast-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "Blazor", "CSS", "Reg.ru Cloud"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/WeatherForecast"
+          },
+          {
+            "type": "demo",
+            "icon": "bx-globe-europe",
+            "text": "Demo",
+            "url": "https://weather.kulikov-asp.net"
+          }
+        ]
+      }
+    ]
   },
   "footer": {
     "rights": "Victor Kulikov. All rights reserved."
