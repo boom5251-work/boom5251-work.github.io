@@ -531,7 +531,7 @@
 }
 .portfolio-section .popup-background .popup-content .preview-image {
   border-radius: 0.5rem;
-  height: 15rem;
+  height: 14rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
