@@ -128,6 +128,14 @@
             "url": "https://weather.kulikov-asp.net"
           }
         ]
+      },
+      {
+        "id": "wine-and-you",
+        "title": "Wine & You (soon)",
+        "description": "A mobile application that allows you to save your favorite wines, scan labels for new discoveries, as well as receive insightful recommendations and follow other wine connoisseurs.",
+        "thumbnailFileName": "wine-and-you-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "ML.NET", "Blazor"],
+        "buttons": []
       }
     ]
   },

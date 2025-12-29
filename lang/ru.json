@@ -128,6 +128,14 @@
             "url": "https://weather.kulikov-asp.net"
           }
         ]
+      },
+      {
+        "id": "wine-and-you",
+        "title": "Вино & Ты (скоро)",
+        "description": "Мобильное приложение, которое позволит сохранять любимые вина, сканировать этикетки для новых открытий, а также получать пресональные рекомендации и следить за другими ценителями вина.",
+        "thumbnailFileName": "wine-and-you-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "ML.NET", "Blazor"],
+        "buttons": []
       }
     ]
   },
