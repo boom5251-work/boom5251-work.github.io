@@ -17,18 +17,22 @@ function showProjectDescription (projectId) {
 
   $('.popup-background').show()
   $('.popup-background').css('display', 'flex')
+
+  $('body').addClass('disable-scroll')
 }
 
 
 function hideProjectDescription (e) {
   if ($(e.target).hasClass('popup-background')) {
     $('.popup-background').hide()
+    $('body').removeClass('disable-scroll')
   }
 }
 
 
 function onCloseProjectButtonClicked () {
   $('.popup-background').hide()
+  $('body').removeClass('disable-scroll')
 }
 
 
