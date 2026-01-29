@@ -11,6 +11,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body.disable-scroll {
+  overflow-y: hidden;
+}
+
 button {
   color: white;
   font-family: "JetBrainsMono";
