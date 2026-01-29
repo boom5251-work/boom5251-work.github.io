@@ -130,6 +130,21 @@
         ]
       },
       {
+        "id": "airport-intelligent-system",
+        "title": "Интеллектуальная система аэропрта (скоро)",
+        "description": "Интеллектуальная система аэропрта — совокупность копонентов информировании и навигации, позволяющая пассажирам получать информацию о рейсах в разных секторах воздушной гавани.",
+        "thumbnailFileName": "airport-intelligent-system.png",
+        "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "SignalR"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/AirportIntelligenceSystem"
+          }
+        ]
+      },
+      {
         "id": "wine-and-you",
         "title": "Вино & Ты (скоро)",
         "description": "Мобильное приложение, которое позволит сохранять любимые вина, сканировать этикетки для новых открытий, а также получать пресональные рекомендации и следить за другими ценителями вина.",

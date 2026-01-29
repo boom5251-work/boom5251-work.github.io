@@ -130,6 +130,21 @@
         ]
       },
       {
+        "id": "airport-intelligent-system",
+        "title": "Airport intelligent system (soon)",
+        "description": "The airport's intelligent system is a set of information and navigation components that allows passengers to receive information about flights in different sectors of the airport.",
+        "thumbnailFileName": "airport-intelligent-system.png",
+        "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "SignalR"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/AirportIntelligenceSystem"
+          }
+        ]
+      },
+      {
         "id": "wine-and-you",
         "title": "Wine & You (soon)",
         "description": "A mobile application that allows you to save your favorite wines, scan labels for new discoveries, as well as receive insightful recommendations and follow other wine connoisseurs.",
