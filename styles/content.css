@@ -469,7 +469,7 @@
 }
 .portfolio-section .portfolio-project .portfolio-project-additional .subtitle {
   font-size: 1.5rem;
-  font-weight: 700 !important;
+  font-weight: normal !important;
   margin: 0 0 3rem 0;
 }
 @media screen and (min-width: 1024px) {
@@ -544,10 +544,11 @@
 }
 .portfolio-section .popup-background .popup-content .popup-title-container .title {
   font-size: 1.5rem;
-  font-weight: 700 !important;
+  font-weight: normal !important;
   margin: 0;
 }
 .portfolio-section .popup-background .popup-content .description {
+  color: rgba(255, 255, 255, 0.8);
   margin: 0;
 }
 .portfolio-section .popup-background .popup-content .used-skill-container {

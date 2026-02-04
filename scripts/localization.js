@@ -133,7 +133,7 @@ function setPortfolioText () {
     const projectBlock = `<div class="portfolio-project" onclick="showProjectDescription('${project.id}')">
       <img src="/images/projects/${project.thumbnailFileName}" alt="${project.title}" class="portfolio-project-image">
       <div class="portfolio-project-additional">
-        <h3 class="subtitle highlighted">${project.title}</h3>
+        <h3 class="subtitle">${project.title}</h3>
       </div>
     </div>`
 

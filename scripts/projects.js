@@ -6,7 +6,7 @@ function showProjectDescription (projectId) {
   </button>
   <img src="/images/projects/${project.thumbnailFileName}" alt="${project.title}" class="preview-image">
   <div class="popup-title-container">
-    <h3 class="title highlighted">${project.title}</h3>
+    <h3 class="title">${project.title}</h3>
   </div>
   <p class="description">${project.description}</p>
   ${getUsedSkillsHtml(project)}
