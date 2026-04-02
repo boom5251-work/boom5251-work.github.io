@@ -5,8 +5,7 @@
 }
 
 .header-section {
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   color: rgb(114, 82, 255);
   z-index: 99;
 }
@@ -47,13 +46,14 @@
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
-  margin-right: 16px;
 }
 .header-section a.link:hover {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
   color: white;
+}
+.header-section a.link {
+  margin-right: 16px;
 }
 .header-section a.link span {
   margin: 0 0 0 0.5rem;
@@ -73,15 +73,16 @@
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
+}
+.header-section .language-select-button:hover {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.header-section .language-select-button {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-}
-.header-section .language-select-button:hover {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
 }
 .header-section .language-select-button span {
   margin: 0 0.5rem;
@@ -120,14 +121,12 @@
   text-decoration: none;
 }
 .header-section .language-select-items .language-select-item:hover {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
   color: white;
 }
 .header-section .mobile-menu-container.active {
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-radius: 0.25rem;
 }
 .header-section .mobile-menu-container.active div.language-select-button-mobile {
@@ -168,12 +167,14 @@
 }
 .hello-section .title {
   font-size: 0px;
-  .title-cursor-z-index: 1;
 }
 .hello-section .title span {
   font-weight: normal;
   font-size: clamp(16px, 4vw, 55px);
   line-height: 1.4em;
+}
+.hello-section .title {
+  .title-cursor-z-index: 1;
 }
 .hello-section #show-more-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -491,8 +492,7 @@
 }
 .portfolio-section .popup-background .popup {
   background-color: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
