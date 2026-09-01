@@ -130,10 +130,31 @@
         ]
       },
       {
+        "id": "calculator-395-ccrf",
+        "title": "Calculator for Article 395 of the Civil Code",
+        "description": "Calculator for calculating interest on the use of someone else’s funds (failure to fulfill a monetary obligation).",
+        "thumbnailFileName": "calculator-395-ccrf-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "TypeScript", "Angular 22", "EF Core", "MS SQL Server", "Claude Code", "Reg.ru Cloud"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/Calculator395CCRF"
+          },
+          {
+            "type": "demo",
+            "icon": "bx-globe-europe",
+            "text": "Demo",
+            "url": "https://395ccrf.kulikov-asp.net/"
+          }
+        ]
+      },
+      {
         "id": "airport-intelligent-system",
         "title": "Airport intelligent system (soon)",
         "description": "The airport's intelligent system is a set of information and navigation components that allows passengers to receive information about flights in different sectors of the airport.",
-        "thumbnailFileName": "airport-intelligent-system.png",
+        "thumbnailFileName": "airport-intelligent-system-thumbnail.png",
         "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "SignalR"],
         "buttons": [
           {
