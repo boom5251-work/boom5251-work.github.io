@@ -130,10 +130,31 @@
         ]
       },
       {
+        "id": "calculator-395-ccrf",
+        "title": "Калькулятор по статье 395 ГК РФ",
+        "description": "Калькулятор процентов за использование чужих денежных средств (неисполнение денежного обязательства).",
+        "thumbnailFileName": "calculator-395-ccrf-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "TypeScript", "Angular 22", "EF Core", "MS SQL Server", "Claude Code", "Рег.Облако"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/Calculator395CCRF"
+          },
+          {
+            "type": "demo",
+            "icon": "bx-globe-europe",
+            "text": "Демо",
+            "url": "https://395ccrf.kulikov-asp.net/"
+          }
+        ]
+      },
+      {
         "id": "airport-intelligent-system",
         "title": "Интеллектуальная система аэропрта (скоро)",
         "description": "Интеллектуальная система аэропрта — совокупность копонентов информировании и навигации, позволяющая пассажирам получать информацию о рейсах в разных секторах воздушной гавани.",
-        "thumbnailFileName": "airport-intelligent-system.png",
+        "thumbnailFileName": "airport-intelligent-system-thumbnail.png",
         "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "SignalR"],
         "buttons": [
           {

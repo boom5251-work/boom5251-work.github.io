@@ -130,10 +130,31 @@
         ]
       },
       {
+        "id": "calculator-395-ccrf",
+        "title": "Kalkulator po članu 395 Građanskog kodexa",
+        "description": "Kalkulator kamata za korišćenje tuđih novčanih sredstava (neispunjavanje novčane obaveze).",
+        "thumbnailFileName": "calculator-395-ccrf-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "TypeScript", "Angular 22", "EF Core", "MS SQL Server", "Claude Code", "Reg.ru oblak"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/Calculator395CCRF"
+          },
+          {
+            "type": "demo",
+            "icon": "bx-globe-europe",
+            "text": "Demo",
+            "url": "https://395ccrf.kulikov-asp.net/"
+          }
+        ]
+      },
+      {
         "id": "airport-intelligent-system",
         "title": "Inteligentni aerodromski sistem (uskoro)",
         "description": "Inteligentni aerodromski sistem je skup informacionih i navigacionih komponenti koje omogućavaju putnicima da dobiju informacije o letovima u različitim sektorima aerodroma.",
-        "thumbnailFileName": "airport-intelligent-system.png",
+        "thumbnailFileName": "airport-intelligent-system-thumbnail.png",
         "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "SignalR"],
         "buttons": [
           {
