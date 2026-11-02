@@ -130,10 +130,31 @@
         ]
       },
       {
+        "id": "calculator-395-ccrf",
+        "title": "俄罗斯联邦民法典第 395 条计算器",
+        "description": "用于计算使用他人资金（未履行金钱债务）所产生利息的计算器。",
+        "thumbnailFileName": "calculator-395-ccrf-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "TypeScript", "Angular 22", "EF Core", "MS SQL Server", "Claude Code", "Reg.ru Cloud"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/Calculator395CCRF"
+          },
+          {
+            "type": "demo",
+            "icon": "bx-globe-europe",
+            "text": "演示",
+            "url": "https://395ccrf.kulikov-asp.net/"
+          }
+        ]
+      },
+      {
         "id": "airport-intelligent-system",
         "title": "机场智能系统（即将推出）",
         "description": "机场智能系统是一套信息与导航组件，旅客可以通过它在机场的不同区域获取航班信息。",
-        "thumbnailFileName": "airport-intelligent-system.png",
+        "thumbnailFileName": "airport-intelligent-system-thumbnail.png",
         "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "SignalR"],
         "buttons": [
           {
