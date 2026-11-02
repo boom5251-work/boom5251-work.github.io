@@ -1,7 +1,8 @@
 const languages = [
   { code: 'ru', code4: 'ru-RU', name: 'Русский' },
   { code: 'en', code4: null, name: 'English' },
-  { code: 'sr', code4: 'sr-SR', name: 'Srbski' }
+  { code: 'sr', code4: 'sr-SR', name: 'Srbski' },
+  { code: 'zh', code4: 'zh-CN', name: '简体中文' }
 ]
 
 const languageFromQuery = new URLSearchParams(location.search).get('lang')

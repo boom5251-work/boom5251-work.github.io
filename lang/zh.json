@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "title": "维克托·库利科夫 — 全栈开发工程师"
+  },
+  "header": {
+    "name": "维克托·库利科夫",
+    "homeButton": "首页",
+    "aboutMeButton": "关于我",
+    "portfolioButton": "作品集",
+    "languageSelectButton": "语言"
+  },
+  "hello": {
+    "title": {
+      "hello": "你好！",
+      "helloName": "我是维克托",
+      "occupationPrefix": "我是一名",
+      "occupations": [
+        "C# 和 TypeScript 程序员",
+        "全栈开发工程师",
+        "ASP.NET Core 开发工程师"
+      ],
+      "additional": "随时准备迎接",
+      "additionalHighlighted": "高难度任务"
+    },
+    "showMoreButton": "了解更多"
+  },
+  "whyMe": {
+    "title": {
+      "common": "为什么选择我加入",
+      "project": "您的项目"
+    },
+    "description": "我是一名合格的全栈开发工程师，重视整洁的代码、容错能力和周密的架构设计。我的项目不仅仅是能运行的程序，更是稳定、可扩展且易于维护的解决方案。我认真负责，追求完美，喜欢解决那些答案并不浮于表面的复杂问题。",
+    "experience": {
+      "years": {
+        "startDate": "2021-01-01",
+        "getYearsWord": {
+          "arguments": "years",
+          "body": "return '年'"
+        },
+        "label": "商业开发经验"
+      },
+      "education": {
+        "info": "IT 高等教育",
+        "label": "学历（学士）"
+      }
+    }
+  },
+  "educationExperience": {
+    "title": "我的职业道路",
+    "education": {
+      "title": "教育背景",
+      "items": [
+        {
+          "date": "莫斯科，2019-2023",
+          "header": "计算机科学与工程",
+          "additional": "俄罗斯技术大学 MIREA（本科）",
+          "isRed": false
+        },
+        {
+          "date": "莫斯科，2023",
+          "header": "前端应用开发",
+          "additional": "俄罗斯技术大学 MIREA（进修课程）",
+          "isRed": true
+        },
+        {
+          "date": "莫斯科，2025-2028",
+          "header": "公共管理",
+          "additional": "俄罗斯总统国民经济与公共管理学院（硕士）",
+          "isRed": null
+        }
+      ]
+    },
+    "experience": {
+      "title": "工作经历",
+      "items": [
+        {
+          "date": "2021年1月 - 2022年2月",
+          "header": "全栈 Web 开发工程师",
+          "additional": "建筑领域初创公司"
+        },
+        {
+          "date": "2022年3月 - 2023年7月",
+          "header": "全栈 Web 开发工程师",
+          "additional": "物流领域初创公司"
+        },
+        {
+          "date": "2023年7月 - 至今",
+          "header": "后端开发工程师",
+          "additional": "Healbe"
+        }
+      ]
+    }
+  },
+  "toolsSkills": {
+    "title": {
+      "tools": "工具",
+      "and": "与",
+      "skills": "技能"
+    },
+    "skills": {
+      "tabButtons": [
+        { "name": "前端" },
+        { "name": "后端" },
+        { "name": "数据库" }
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "作品集",
+    "projects": [
+      {
+        "id": "weather-forecast",
+        "title": "天气预报",
+        "description": "一款提供最新天气预报的 Web 应用。这是我大学项目的新版本。它使用了多个外部 API，可以显示世界任何地方的天气数据。",
+        "thumbnailFileName": "weather-forecast-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "Blazor", "CSS", "Reg.ru Cloud"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/WeatherForecast"
+          },
+          {
+            "type": "demo",
+            "icon": "bx-globe-europe",
+            "text": "演示",
+            "url": "https://weather.kulikov-asp.net"
+          }
+        ]
+      },
+      {
+        "id": "airport-intelligent-system",
+        "title": "机场智能系统（即将推出）",
+        "description": "机场智能系统是一套信息与导航组件，旅客可以通过它在机场的不同区域获取航班信息。",
+        "thumbnailFileName": "airport-intelligent-system.png",
+        "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "SignalR"],
+        "buttons": [
+          {
+            "type": "repository",
+            "icon": "bx-folder-open",
+            "text": "GitVerse",
+            "url": "https://gitverse.ru/boom5251/AirportIntelligentSystem"
+          }
+        ]
+      },
+      {
+        "id": "wine-and-you",
+        "title": "Wine & You（即将推出）",
+        "description": "一款移动应用，可以收藏您喜爱的葡萄酒、扫描酒标发现新品，还能获得有价值的推荐并关注其他葡萄酒爱好者。",
+        "thumbnailFileName": "wine-and-you-thumbnail.png",
+        "usedSkills": ["C#", "ASP.NET", "EF Core", "MAUI", "ML.NET", "Blazor"],
+        "buttons": []
+      }
+    ]
+  },
+  "footer": {
+    "rights": "维克托·库利科夫。保留所有权利。"
+  }
+}
